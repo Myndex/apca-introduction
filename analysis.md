@@ -108,7 +108,7 @@ No. This naive approach is fundamentally wrong, and no, it does not provide any 
 
 More importantly, it does NOT calculate "lightness" which is a perceptual quality, and the claim that it represents lightness, a perceptual sensation (subject to context) as opposed to _light_ or _luminance_ (a physical measure) further underlines xi's lack of understanding of the science here.
 
-I am not certain the motivation for presenting it here, and further, if a naive approach were to be included for a baseline, then the most simple, such as Weber, should be used. Otherwise it only serves to confuse the reader and obscure the point.
+I am not certain the motivation for presenting it here, and further, if a naive approach were to be included for a baseline, then the most simple, such as "simple contrast", should be used. Otherwise it only serves to confuse the reader and obscure the point.
 
 
 
