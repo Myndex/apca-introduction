@@ -223,7 +223,7 @@ function contrast(fg, bg) {
 ```
 
 > _Again we can see the same structure: We first convert colors to lightness, then
-calculate the difference between them. _
+calculate the difference between them._
 
 Actually NO.
 
