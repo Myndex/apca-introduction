@@ -165,7 +165,9 @@ has been called the ["gold standard" for text contrast]. It is usually defined
 as `(yfg - ybg) / ybg` which is the same as `yfg / ybg - 1`. In this case, 0.05
 is added to both values to account for ambient light._
 
-Weber is nothing more than a log of the stimulus to a reference. While it is true that I once referred to Weber as the gold standard for contrast of text, I have to add that applies specifically and only to dark text on a light background, and at or near the threshold JND. Weber becomes increasingly invalid as there is departure from those parameters. It should be mentioned that Weber is roughly 180 years old. In the 1960s, Stevens pointed out how Weber was flawed, and presented the power curve solution. More recently, Poynton pointed out that perception curves were more of a hybrid between log and power curves.
+Weber is nothing more than a log of the stimulus to a reference. While it is true that at the very beginning of the early research into perceptual contrast, I _once_ referred to Weber as the "gold standard for contrast of text", but to clarify, that applied specifically and only to dark text on a light background, and at or near the _threshold_ JND. Weber becomes increasingly invalid as there is departure from those parameters. It should be mentioned that Weber is roughly 180 years old. In the 1960s, Stevens pointed out how Weber was flawed, and presented the power curve solution. More recently, Poynton pointed out that perception curves were more of a hybrid between log and power curves.
+
+Where Weber has some utility in terms of research for the purposes of certain comparisons, it is not at all useful for design guidance in today's world of grpahicslly rich web content.
 
 > _The shift by 1 is removed
 because it has no impact on the results (as long as the thresholds are adapted
