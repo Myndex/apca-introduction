@@ -1,7 +1,7 @@
 # Derailed analysis of APCA
-Below is user xi's flawed analysis of APCA, where he abstracts the math and creates his own version of the math and eliminates many of the key properties of the APCA method in performing his analysis. But then he goes further to create his own separate version of WCAG 2 contrast math, which is a crude and incomplete attempt to reverse engineer the APCA contrast curves, and then attempts to makes claims that APCA is similar to WCAG 2. In short, the analysis below is disingenuous at best, and only serves to obfuscate and confuse anyone reading this.
+Below is user xi's analysis of APCA, which I find flawed and misleading for qa number of reasons. He abstracts the math and creates his own version of the math and eliminates many of the key properties of the APCA method in performing his analysis. But then he goes further to create his own separate contrast math and claims it is a "versions" of WCAG 2, which it is not. What it is, is a crude and incomplete attempt to reverse engineer the APCA contrast curves, and then used to makes claims that APCA is similar to WCAG 2. In short, the analysis below appears to be disingenuous, and my concern is that it serves to obfuscate and confuse anyone reading his analysis.
 
-I've forked this repo so that I can point out the flaws and misconceptions he presents. Original statements quoted and in italics.
+I've forked the repo so that I can point out the flaws and misconceptions he presents. Original statements quoted and in italics.
 
 -----
 > ## _Detailed analysis of APCA (2022-07-16)_
@@ -11,7 +11,7 @@ training in the science around visual perception**. That's why I cannot evaluate
 whether APCA is *better* than WCAG 2.x. Instead this is a systematic
 comparison of their mathemetical properties._
 
-If xi has no knowledge of the science of visual perception, then I'd certainly prefer that xi not state unsupported/uninformed opinions as if they were facts.
+It is important to note that xi admits to no knowledge of the science of visual perception. With this the case, I'd certainly prefer that xi not state unsupported/uninformed opinions as if they were facts. I will bring this point up, as there are basic misunderstandings regarding the field of vieual perception in xi's analysis.
 
 > ## _Context: The Web Content Accessibility Guidelines (WCAG)_
 
@@ -20,7 +20,7 @@ Content Accessibility Guidelines (WCAG). WCAG is an official W3C
 recommendation, a normative part of many laws all over the world, and generally
 a good read._
 
-WCAG 2 is not a normative part of "many" laws. Internationally, _some_ nations use WCAG 2 as the basis for regulation relating to governmental websites. WCAG 2 is not law in the United States except in some narrow areas (25% of airport kiosks must follow WCAG2). WCAG 2.0 is part of the 508 government regulations which apply to government web sites and government procurement of certain IT. 508 has two major exceptions: **1) alternate means**. This allows any alternative method other than WCAG to be used, provided it improves actual accessibility, **2) Commercially available**. If the technology that follows WCAG 2 is not commercially available, then WCAG does not need to be followed for that specific critera.
+WCAG 2 is _not_ a normative part of "many" laws. Internationally, _some_ nations use WCAG 2 as the basis for regulation relating to governmental websites. WCAG 2 is not law in the United States except in some narrow areas (25% of airport kiosks must follow WCAG2). WCAG 2.0 is part of the 508 government regulations which apply to government web sites and government procurement of certain IT. 508 has two major exceptions: **1) alternate means**. This allows any alternative method other than WCAG to be used, provided it improves actual accessibility, **2) Commercially available**. If the technology that follows WCAG 2 is not commercially available, then WCAG does not need to be followed for that specific critera.
 
 It is extremely rare for WCAG 2 to be "legally" applied across the board. In the United States, the ADA does not specify WCAG 2 as a standard, but does say that sites that are public accomodations must be acccessible — arguably, working for actual accessibility (as opposed to certain arbitrary goal posts) is best practice here. To be noted, the Winn-Dixie case in Florida was vacated, IIRC that _was_ the only Federal case that held support for WCAG 2, but no longer citable.
 
@@ -30,16 +30,16 @@ The Domino's case regarded if they had to abide by ADA, not WCAG.
 for accessibility. Different humans have different needs, and different
 situations require different kinds of support._
 
-This can only be correctly handled with user customization, something that the W3C WAI or AGWG has failed to promote or develop. Part of the problem with many of the needed acessibility features are rooted in the technology, and outside the control of the author until such technology exists.
+This can only be correctly handled with user customization, something that the W3C WAI & AGWG have not ben able to promote or develop. Part of the problem with many of the needed acessibility features are rooted in the technology, and outside the control of the author until such technology exists.
 
 > _This is also the case in the context of color contrast: vision impairments,
 ambient light, and screen settings can all have a pronounced impact on
 legibility. None of these are known beforehand by website authors, so the rules
 provided by WCAG need to work regardless of these factors._
 
-No. There are defined and well known baseline standards relating to common case ambient environments and screen standards. Display standards define adjustment criteria, CSS provides size metrics that are based on visual angle (ref px), and manufacturers work with these in developing technologies to extend the operating ranges.
+**No.** There are defined and well known baseline standards relating to common case ambient environments and screen standards. Display standards define adjustment criteria, CSS provides size metrics that are based on visual angle (ref px), and manufacturers work with these in developing technologies to extend the operating ranges.
 
-WCAG 2 contrast SCs and understanding docs make spurious claims that important factors such as antialiasing can not be considered, which is bizzare when that technology has been an important part of display technology for decades.
+WCAG 2 contrast SCs and understanding docs make dismissive or "hand wavy" statements regarding important factors—for instance, stating that antialiasing can not be considered, which is bizzare when that technology has been an important part of rasterizing for displays for decades.
 
 
 > _Faced with the question whether it wanted to give precise instructions (that
@@ -49,10 +49,11 @@ steps for evaluating a website. Many of these checks can be automated. It does
 not always result in perfect accessibility, but it gives lawmakers a solid
 baseline._
 
-Opinion not based in fact. Some of WCAG 2, such as that relating to the structure of the document needed for accessibility (i.e. needed for screen reader support) is certainly important. But some of WCAG 2 that relate to perception, such as contrast, are not based in science, not empirically tested nor evaluated, were in fact objected to at the time (objections ignored), and otherwise unsupportable as law, and I am unaware of any cases judged on the merits in the US, at least not at the Federal level. In discussing this with legal council, I was informed that the NY and CA cases were relating to actual accessibility, not automated testing, though this is soething I've been looking into.
+**Opinion not based in fact.**
+
+Some of WCAG 2, such as that relating to the structure of the document needed for accessibility (i.e. needed for screen reader support) is certainly important. But some of WCAG 2 that relate to perception, such as contrast, are not based in science, not empirically tested nor evaluated, were in fact objected to at the time (objections ignored), and otherwise unsupportable as law, and I am unaware of any cases judged on the merits in the US, at least not at the Federal level. In discussing this with legal council, I was informed that the NY and CA cases were relating to actual accessibility, not automated testing, though this is soething I've been looking into.
 
 > ## _Components of contrast_
-
 > _When we speak about contrast, we actually mean a few different things:_
 
 It is true that contrast means a few different things, but listed below are not those things. Listed below all relate to one _single_ kind of contrast.
@@ -69,6 +70,7 @@ While these are some the things that relate specifically to _readability contras
 - The effect of line and letter spacing, padding, other whitespace.
 - Visual hierarchy of contrasts
 
+There may be translation errors in some of what xi states due to translation from German, I do try to make allowances for that in my attempts to understand what he is trying to acheive here.
 
 > _In the following sections I will take a closer look at how WCAG 2.x and APCA
 answer each of these questions._
@@ -82,7 +84,7 @@ No, xi does not answer nor address these questions in the present analysis.
 predict how most humans perceive a color combination, even if they cannot be
 correct 100% of the time._
 
-This is a weird statement. Both color and contrast are not real, they are perceptions. I have no idea what he means by "true" contrast formula, and it may be a translation issue as his native language is german. Nevertheless, as perceptions, we have decades of experience with perceptually uniform color and vision models, such models are the foundation of advanced technology such as image and video data compression.
+This is a weird statement. Both color and contrast are not real, they are perceptions. I have no idea what he means by "true" contrast formula, and it may be a translation issue as his native language is german. Nevertheless, as perceptions, we have decades of experience with perceptually uniform color and vision models, such models are the foundation of advanced technology such as image and video data compression. APCA rests solidly on this body of knowledge.
 
 
 > ### _A naive approach_
@@ -105,9 +107,7 @@ features the basic structure: We first transform each color to a value that
 represents lightness. Then we calculate a difference between the two lightness
 values._
 
-No. This naive approach is fundamentally wrong, so no, it does not provide any sort of baseline.
-
-More importantly, it does _NOT_ calculate "lightness" which is a perceptual quality, and the claim that it represents lightness, a perceptual sensation (subject to context) as opposed to _light_ or _luminance_ (a physical measure) further underlines xi's lack of understanding of the science here.
+No. This naive approach is fundamentally wrong, so it does not provide any sort of baseline. More importantly, it does _NOT_ calculate "lightness" which is a perceptual quality, and the claim that it represents lightness, a perceptual sensation (subject to context) as opposed to _light_ or _luminance_ (a physical measure) further underlines xi's lack of understanding of the science here.
 
 I am not certain the motivation for presenting this approach here, and further, if a naive approach were to be included for a baseline, then the most simple, such as "simple contrast", should be used. Otherwise it only serves to confuse the reader and obscure the point.
 
@@ -173,7 +173,15 @@ a much bigger response than the same amount of blue light._
 
 The weights here are derived from the CIE 1931 2° standard observer. While the CIE 1931 2° standard observer is the cornerstone of most colorimetry, it is also known that it is deficient in some ways. Also, it is useful to point out that the piecewise sRGB math was created in the 1990s for the purpose of processing on the computer technology of the time, but even then, and in the standard, the transfer curve for the physical monitor is a little difference, being specified as a pure gamma curve of 2.2, and relating to CRT monitors with a limited output of 80 nits. Today, monitors are commonly much brighter, and brighter monitors necessitate a higher gamma for the same perceptual effect in the same given envirnment.
 
-At any rate, the expected luminance will vary, but is still not the perceptual lightness, which is different from the emitted luminance, and realted to a number of contextual factors.
+At any rate, the expected luminance will vary, but is still not the perceptual lightness, which is different from the emitted luminance, and related to a number of contextual factors.
+
+Again:
+
+**Luminance** is a physical measure of light in the real world, but it is not perceptual lightness.
+
+**Perceptual Lightness** is a model of how human vision perceives luminance, given certain contexts. It is not a 1:1 relationship to luminance.
+
+Thoughout this analysis, xi seems to conflate the two, and makes some logical leaps that are therefore unsupported.
 
 
 
@@ -627,7 +635,13 @@ But again that is not at all the point. The _POINT_ is that **SPATIAL FREQUENCY 
 > 4.  _Use the lookup table provided at the link above to find a minimum contrast
     for the given combination of size and weight._
 
-This actually depends on the conformance level. The base level, BRONZE, conformance is more relaxed (similar to WCAG 2). The requirement for "font alignment" to a reference font is intended for Silver and Gold levels.
+This actually depends on the conformance level.
+
+The base level, BRONZE, conformance is more relaxed to be similar to WCAG 2, nevertheless those 6 levels still have font size and weight minimums.
+
+The requirement for the lookup table and "font alignment" to a reference font x-height is intended for Silver and Gold levels.
+
+The requirement for "font alignment" to a reference font _weight_ is intended for the Gold level.
 
 
 > _WCAG 3 is still an early draft and does not yet contain many guidelines. I
@@ -635,16 +649,16 @@ assume that guidelines similar to 1.4.4, 1.4.10, and 1.4.12 will again be
 included. So the strategy of giving users control over spatial frequency will
 still work._
 
-There is more in the pending pull requests for WCAG 3.
+There is more in the [pending pull requests](https://github.com/w3c/silver/pull/630) for WCAG 3.
 
-Users should not be blocked from adjusting to their needs. But also, guidelines needs to be in touch with reality, and in this case that means using metrics that make sense. Many of the metrics listed are not at all consistent due to the complete lack of standardization among font families.
+Users should not be blocked from adjusting to their needs. But also, guidelines needs to be in touch with reality, and in this case that means using metrics that make sense. Many of the metrics listed in WCAG 2 are not at all consistent due to the complete lack of standardization among font families.
 
 > _With the more sophisticated link between spatial frequency and color contrast,
 user intervention might be less relevant though. However, the model described
 above is complicated and leaves a lot of wiggle room, especially in steps 2 and
 3._
 
-There is "wiggle room" in terms of contrast in the first place, as it is a sliding scale relative to levels from spot reading, sub fluent, fluent and best fluent readability. It is not a binary choice, and attempting to make it binary is a flawed point of view.
+There is "wiggle room" in terms of contrast in the first place, as it is a sliding scale relative to levels from spot reading, sub fluent, fluent and best fluent readability. It is not a binary choice, and attempting to make it binary is a flawed point of view. Lovie-Kitchin et alia did the groudbreakign work here in the 1990s.
 
 
 > ## _Non-text contrast_
