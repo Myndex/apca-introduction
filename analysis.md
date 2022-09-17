@@ -1,4 +1,6 @@
-# Derailed analysis of APCA (rebuttle to xi's analysis)
+# Derailed analysis of APCA
+### _(rebuttle to xi's analysis)_
+
 Below is user xi's analysis of APCA, which I find flawed and misleading for a number of reasons. He abstracts the math and/or creates his own version of the math and eliminates many of the key properties of the APCA method in performing his "analysis." But then he goes further to create his own separate contrast math and claims it is a "version" of WCAG_2, which it is not. What it is, is a crude and incomplete attempt to reverse engineer the APCA contrast curves, and then used to makes claims that APCA is similar to WCAG 2. In short, on the face of it, his analysis quoted below appears to be disingenuous, and my concern is that it serves to obfuscate and confuse anyone reading his analysis.
 
 I've forked the repo so that I can point out the flaws and misconceptions he presents. His original statements quoted and in italics.
