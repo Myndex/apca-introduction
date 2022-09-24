@@ -1,3 +1,17 @@
+# Corrected fork of apca-introduction, with comments
+User xi created an unauthorized repo called "apca-introduction" which unfortunately is misleading to say the least. This fork is intended to clarify, make corrections, and set the record straight.
+
+In addition to the corrected ***"The missing introduction to APCA"*** below, this repo also has:
+
+[Derailed analysis of APCA](https://github.com/Myndex/apca-introduction/blob/main/analysis.md) a rebuttle to xi's _"Detailed analysis of APCA"_ which mischaracterizes the differences between various contrast measures.
+
+[Math Lies and Video](https://github.com/Myndex/apca-introduction/blob/main/Math_Lies_and_Video.md) Or put another way, "How to use math to lie". This is a response to a lengthy blog post xi made that is rife with errors and misconceptions, and only serves to confuse and not enlighten on the topic.
+
+There are also a [large number of issue posts](https://github.com/xi/apca-introduction/issues?q=is%3Aissue) objecting to the misleading information presented at xi's repo.
+
+------
+
+
 # The missing introduction to APCA
 
 ## *What is APCA in three sentences:*
