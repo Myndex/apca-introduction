@@ -5,6 +5,8 @@ Below is user xi's analysis of APCA, which I find flawed and misleading for a nu
 
 I've forked the repo so that I can point out the flaws and misconceptions he presents. His original statements quoted and in italics.
 
+For the rebuttle to his recent blog post, please see [**Math Lies and Video**](https://github.com/Myndex/apca-introduction/blob/main/Math_Lies_and_Video.md)
+
 -----
 > ## _Detailed analysis of APCA (2022-07-16)_
 
