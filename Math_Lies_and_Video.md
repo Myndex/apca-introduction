@@ -53,7 +53,7 @@ Here is another version of the chart. In this case, the background ranges from 1
 
 <img width="540" alt="Contrast Compared with simple and WCAG and adding in APCA... here the full visual range with WCAG2 at 4.5:1 for all" src="https://github.com/Myndex/apca-introduction/blob/main/images/Screen%20Shot%202022-09-23%20at%208.20.00%20PM.png">
 
-Again, Tobias in his various posts is completely ingnoring these prinipals which are academic in the field of visual perception, and well understood, accepted, peer-reviewed scientific consensus.
+Again, Tobias in his various posts is completely ingnoring these principles which are academic in the field of visual perception, and well understood, accepted, peer-reviewed scientific consensus.
 
 > ### _Equivalence of contrast formulas_
 > _I want to try to formalize this notion of “similarity” between different formulas. Usually, a contrast formula is used to decide whether the contrast is above a certain threshold value._
