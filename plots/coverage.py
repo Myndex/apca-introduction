@@ -31,15 +31,11 @@ def apca_y(color):
 
 
 def apca_contrast(yfg, ybg):
-	_yfg = yfg ** np.where(ybg > yfg, 0.57, 0.62)
-	_ybg = ybg ** np.where(ybg > yfg, 0.56, 0.65)
-	c = (_ybg - _yfg) * 1.14
+	lfg = yfg ** np.where(ybg > yfg, 0.57, 0.62)
+	lbg = ybg ** np.where(ybg > yfg, 0.56, 0.65)
+	c = (lbg - lfg) * 1.14
 	c = np.where(np.abs(c) < 0.1, 0, np.where(c > 0, c - 0.027, c + 0.027))
 	return np.abs(c) * 100
-
-
-def count(a, b):
-	return sum(a * b)
 
 
 def iter_levels(levels):
@@ -52,8 +48,8 @@ def iter_levels(levels):
 			yield levels[i - 1], levels[i]
 
 
-def print_row(row, sep=' | ', end=['']):
-	_row = [''] + [f'{x:.1f}' for x in row] + end
+def print_row(row, sep=' | '):
+	_row = [''] + [f'{x:.1f}' for x in row] + ['']
 	_row = [f'{s: >5}' for s in _row]
 	print(sep.join(_row).strip())
 
@@ -64,7 +60,9 @@ def print_table(rows):
 
 	r = np.array(rows)
 	totals = [sum(r[:, i]) for i in range(r.shape[1])]
-	print_row(totals, end=['', ''])
+	if len(rows) == len(rows[0]):
+		totals.append(sum(rows[i][i] for i in range(len(rows))))
+	print_row(totals)
 	print()
 
 
@@ -83,17 +81,17 @@ if __name__ == '__main__':
 	wcag = wcag_contrast(wcag_yfg, wcag_ybg)
 	wcag4 = wcag_contrast(wcag_yfg, wcag_ybg, 0.4)
 
-	for _wcag, wcag_levels in [
-		(wcag, WCAG_LEVELS),
-		(wcag4, WCAG4_LEVELS),
-		(apcai, APCA_LEVELS),
+	for values1, levels1, values2, levels2 in [
+		(wcag, WCAG_LEVELS, apca, APCA_LEVELS),
+		(wcag4, WCAG4_LEVELS, apca, APCA_LEVELS),
+		(apcai, APCA_LEVELS, apca, APCA_LEVELS),
 	]:
 		rows = []
-		for wcag_lower, wcag_upper in iter_levels(wcag_levels):
+		for lower1, upper1 in iter_levels(levels1):
 			rows.append([])
-			a = (wcag_lower <= _wcag) * (_wcag < wcag_upper)
-			for apca_lower, apca_upper in iter_levels(APCA_LEVELS):
-				b = (apca_lower <= apca) * (apca < apca_upper)
-				v = sum(a * b) / size * 100
+			a = (lower1 <= values1) & (values1 < upper1)
+			for lower2, upper2 in iter_levels(levels2):
+				b = (lower2 <= values2) & (values2 < upper2)
+				v = sum(a & b) / size * 100
 				rows[-1].append(v)
 		print_table(rows)
