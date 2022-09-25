@@ -6,6 +6,61 @@ It should be noted that by [Tobias's own admission](https://github.com/Myndex/ap
 
 My concern is that he has extended his disinformation into posts in W3C GitHub groups, "baffling with BS" and obfuscating with math that the uninitiated may be tempted to accept without further analysis.
 
+
+## Generalized comments: 
+
+I'm not sure what @xi is up to, some of these things we covered over three years ago in the initial evaluations of existing contrast metrics, some of which were discussed in WCAG thread #695, and some were discussed elsewhere.
+
+xi is, by his own admission, not familiar with vision or color science. The main exception I have is his insistence on "simplifying" math by discarding perceptual uniformity, which he does liberally at his repo, as well as a few other places.
+
+
+### Regarding Hwang/Peli 
+xi brings up Hwang/Peli as if normative, and it is not. This was listed early in thread #695 as part of the early due diligence, but while interesting, it lacks credible applicaton.
+
+First, the **Hwang/Peli paper is just a hypothesis**, with no empirical data or study. The graphs are simply math assumptions derived a priori. Further, the Hwang/Peli paper is essentially just an asymmetric version of WCAG 2. 
+
+Early on I experimented with these types of Weber with various asymmetric offsets and scales, and found they did not match to measured perception of sRGB displays over the visual range (i.e. they are not particularly uniform).
+
+
+### S.S.Stevens
+[To Honor Fechner and Repeal His Law:](https://www.science.org/doi/10.1126/science.133.3446.80) A power function, not a log function, describes the operating characteristic of a sensory system. (S.S.Stevens, 1961)
+
+xi says:
+> _This offset has a very different effect for Weber than for Steven though. Using an offset of 0.05 for Weber is quite similar to using an offset of 0.0025 and and exponent of 1/3 (used e.g. in CIELab and OkLab) for Stevens:_
+
+This is a significant misunderstanding of the field here. First of all CIE L* already has an offset, and as a matter of comparison, ∆L* is very similar to WCAG 2 contrast in terms of the shape of the response curve relative to a set of color pairs that span the visual range.
+
+L* is based on Munsell Value.
+
+Stevens is among the first to note certain spatial frequency sensitivities in lightness/brightness. But this was lightness/brightness, not quite the same as contrast, which is separate.
+
+Again, Tobias seems focused on abstract numerical comparisons, not vision science.
+
+The graph of different curves he presents is not really meaningful, as nowhere does he present any of the available empirical data sets as a relative example, or the other accepted perceptual lightness curves (such as L*) so I am not certain of the point he is trying to make?
+
+### APCA
+APCA traces partly back to Stevens, though also Fairchild's R-Lab, and many others. APCA though adds several needed practical additions for modeling self-illuminated displays, including flare and black point compensation and polarity sensitivity, and is concerned with high spatial frequency stimuli (text).
+
+xi is not examining any empirical data at all, only the abstraction of the math. This despite the fact there is a wealth of available data sets for training models.
+
+Speaking of, we now have next generation contrast matching experiments, intended for larger empirical studies (pending funding), and further fine-tuning. But even so, thus far in the public beta phase, the feedback is the methods/guidelines that are built on APCA 0.0.98G-4g are working very well.
+
+Per the feedback from beta users, it is not a question of the APCA math at this point, so much as the wider array of guidelines such as use-cases and minimum thresholds, which are openly discussed at the [APCA discussion forum.](https://github.com/Myndex/SAPC-APCA/discussions/39).
+
+Associated with this is the recent shift in the WCAG 3 conformance model, and questions about meeting those issues.
+
+### What xi is not doing
+xi is attempting to reverse engineer the APCA Lc curves, but what xi is not doing is any empirical study or research to provide the basis for the curves. 
+
+With the patents pending/applied for, we've felt comfortable presenting the math/methods publicly. Doing so makes reverse engineering trivial, meaning that uninformed hacks can twist things around—but make no mistake, they are doing a disservice in that they create confusion and elevate misunderstanding. 
+
+### *But also, reverse engineering is IP theft*.
+
+**Personal note:** if anyone is curious as to why I may seem a little bent out of shape here, it just may have something to do with some hack that knows nothing of visual perception attempting a clumsy reverse engineering of three years of research and development and posting misleading "analysis".
+
+For xi's benefit I listed some of the historical contrast methods here: https://github.com/xi/apca-introduction/issues/17#issuecomment-1217843920 
+
+
 ### The purpose of this fork from xi's repo
 The xi/apca-introduction repo is rife with misleading, inaccurate, and even false statements. It is using inappropriate examples that are designed to "wash away" the actual and important aspects of the contrast methods that are supposedly being evaluated.
 
@@ -103,6 +158,7 @@ In conclusion, I don't know what xi (Tobias Bengfort)'s motiviation is here. The
 At this point I have exerted substantial effort in good faith to help Tobias understand the important factors of vision science, but he is not moving toward the path of knowledge, instead seemingly steadfast in presenting this fallacious narrative which ignores the last hundred years of vision science.
 
 ### CONCLUSION: xi/Tobias Bengfort's opinion on this subject is notwithstanding.
+
 
 Thank you for reading,
 
