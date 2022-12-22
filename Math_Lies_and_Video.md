@@ -25,6 +25,11 @@ A line from Star Trek Wrath of Kahn comes to mind, in that xi is abstracting the
 
 Put another way, xi is applying paint to a rusty car, hoping that will make it run, but the engine is missing.
 
+### Thresholds are not static
+One of the key fallacies that xi continues to assert, is that "only a single threshold is important" as opposed to perceptual uniformity. But this is a substantial misunderstanding. For instance under WCAG2, the threshold of 4.5 to 1 has a completely different appearance when one of the colors is white than that same threshold when one of the colors is black. And that threshold shifts over the entire visual range, and not in a useful way.
+
+What is required first is a perceptually uniform scale so that a given threshold has an equivalent perception across the entire visual range. xi is completely ignoring this fundamental and critically important property of perceptual contrast prediction.
+
 
 ### Regarding Hwang/Peli 
 xi brings up Hwang/Peli as if normative, and it is not. This was Discussed early in thread #695 as part of the early due diligence, but while interesting, it lacks credible applicaton.
