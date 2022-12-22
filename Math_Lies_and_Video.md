@@ -143,6 +143,7 @@ Again, Tobias in his various posts is completely ignoring these principles which
 ### False
 This is not true as the "usual" case, though it may be partly true for WCAG_2. Such a statement is ignoring the importance of perceptual uniformity. Not just for thresholds, but for a continuous measurement, which is needed in design workflows such as for creating the visual hierarchy. I discuss this in [**The Realities And Myths Of Contrast And Color**](https://www.smashingmagazine.com/2022/09/realities-myths-contrast-color/). 
 
+-----
 ## 3) THE BIGGEST TAKEAWAY HERE
 But aside from this, the claim that perceptual uniformity is not needed, and only "threshold matching" is, is essentially **"one dimensional thinking in a three dimensional space."** Tobias is literally only considering "single points of contrast" when he speaks of thresholds. This grossly misrepresents the complexity and nuance of contrast perception for the human vision system. 
 
@@ -178,6 +179,7 @@ To add, what is important is the area where a model is perceptually uniform (if 
 
 Xi's "detailed analysis" is similarly unfounded and based on his uninformed belief that everything can be reduced to a simple contrast ratio, which as we have shown, is patently false. My rebuttle to xi's flawed analysis is [**here in this fork**](https://github.com/Myndex/apca-introduction/blob/main/analysis.md).
 
+-----
 ## 4) TL;DR (Summary)
 
 In conclusion, xi is looking at the contrast problem incorrectly, making invalid assumptions and using inappropriate math. The end result is promoting a misunderstanding, which only causes confusion regarding a field that is already challenging to understand for most. He is not clarifying he is obfuscating.
