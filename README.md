@@ -5,9 +5,9 @@ In addition to the corrected ***"The missing introduction to APCA"*** below, thi
 
 [Derailed analysis of APCA](https://github.com/Myndex/apca-introduction/blob/main/analysis.md) a rebuttle to xi's _"Detailed analysis of APCA"_ which mischaracterizes the differences between various contrast measures.
 
-[Math Lies and Video](https://github.com/Myndex/apca-introduction/blob/main/Math_Lies_and_Video.md) Or put another way, "How to use math to lie". This is a response to a lengthy blog post xi made that is rife with errors and misconceptions, and only serves to confuse and not enlighten on the topic.
+[Math Lies and Videotape](https://github.com/Myndex/apca-introduction/blob/main/Math_Lies_and_Video.md) Or put another way, _"How to use math to lie"_. This is a response to a lengthy blog post xi made that is rife with errors and misconceptions, and only serves to confuse and not enlighten on the topic.
 
-There are also a [large number of issue posts](https://github.com/xi/apca-introduction/issues?q=is%3Aissue) objecting to the misleading information presented at xi's repo.
+There are also a [large number of issue posts](https://github.com/xi/apca-introduction/issues?q=is%3Aissue) objecting to the misleading information presented at xi's repo. xi has closed many of them without action, so if reviewing, look at the closed issues.
 
 ------
 
@@ -34,7 +34,7 @@ is a new algorithm to predict the perceived lightness contrast between two adjac
 
 APCA was created by Andrew Somers at Myndex Research, and under the oversight of the Visual Contrast subgroup of Silver, and is the candidate method for contrast for [WCAG&nbsp;3](https://www.w3.org/TR/wcag-3.0/) (W3C Accessibility Guidelines).
 
-The official interactive demo is available at [www.myndex.com/APCA/](https://www.myndex.com/APCA/).
+The official interactive demo is available at [www.myndex.com/APCA/](https://www.myndex.com/APCA/). No other link is canonical nor officially approved.
 
 ## Algorithm
 
@@ -98,31 +98,33 @@ function contrastAPCA(tx, bg) {
 Also see [APCA In A Nutshell](https://git.apcacontrast.com/documentation/APCA_in_a_Nutshell).
 
 ## Comparative Examples
-
-[![Visual comparison of WCAG 2.x and APCA](examples/screenshot1.png)](https://xi.github.io/apca-introduction/examples/)
-[![Visual comparison of WCAG 2.x and APCA](examples/screenshot2.png)](https://xi.github.io/apca-introduction/examples/)
-[![Visual comparison of WCAG 2.x and APCA](examples/screenshot3.png)](https://xi.github.io/apca-introduction/examples/)
+These examples are based on xi's example script. The script and method was deeply flawed, and has been corrected. These examples below are intended to maintain the same comparative intent, but using useful and correct math.
+[![Visual comparison of WCAG 2.x and APCA](examples/screenshot1.png)](https://myndex.github.io/apca-introduction/examples/)
+[![Visual comparison of WCAG 2.x and APCA](examples/screenshot2.png)](https://myndex.github.io/apca-introduction/examples/)
+[![Visual comparison of WCAG 2.x and APCA](examples/screenshot3.png)](https://myndex.github.io/apca-introduction/examples/)
 
 ### Official Comparison from Myndex Research:
-This comparison uses achromatic grays as those define readability.
+This comparison uses achromatic grays as those define readability, making the comparative differences clearly evident.
 
 <img width="540" alt="Visual comparison of WCAG 2.x and APCA" src="https://git.apcacontrast.com/images/ColumnCompareAll400.png">
 
 ## Status
 
-WCAG&nbsp;2 is a guideline developed and recommended by the W3.org. While WCAG&nbsp;2 is not legally binding itself, it has become a normative part of some laws or regulations in some specific jurisdictions around the globe. 
+WCAG&nbsp;2 is a guideline developed and recommended by the W3.org. While WCAG&nbsp;2 is not legally binding itself, it has become a normative part of some regulations in some specific jurisdictions around the globe. The fact that there is a need to define contra specifications for legal reasons makes it all the more important that there be a perceptually accurate contrast method to do so. This need led to the Genesis of the APCA.
 
 Currently both APCA and the future WCAG&nbsp;3.0 are in active development. At the time of this writing, neither is officially recommended by the W3C.
 
-APCA is also being developed independently for other standards and guidelines beyond web content.
+APCA is also being developed independently for other standards and guidelines beyond web content, and is rapidly being adopted by software developers and content designers.
 
 ## Evaluating APCA
 
-Evaluating a contrast algorithm is fairly straight forward as far as determining perceptual uniformity, or in other words, efficacy in terms of the predicted, relative amount of contrast across the visual range. This is because  all sighted users have similarly *shaped* contrast sensitivity curves when it comes to achromatic luminance (literally, the colorless black to white range of lightness). 
+Evaluating a contrast algorithm is fairly straight forward as far as determining perceptual uniformity, or in other words, efficacy in terms of the predicted, relative amount of contrast across the visual range. This is because all sighted users have similarly *shaped* contrast sensitivity curves when it comes to achromatic luminance (literally, the colorless, black to white range of lightness). 
 
 Luminance is the measure of light coming from the display, and perceived lightness is how a human judges the lightness or brightness, in the context of the surrounding environment. Luminance is processed by the human vision system in a manner that makes it critical for readability.
 
-On the other hand, the *thresholds* chosen for guidelines—i.e., how much contrast does a given element need—is more complicated. All sighted users have substantial contrast needs for best readability. Some users have impairments that cause a reduced contrast sensitivity, and those users need higher contrasts in general. But other users may be over-sensitive to high contrasts, and they then need lower contrasts overall. 
+On the other hand, the *thresholds* chosen for guidelines—i.e., how much contrast does a given element need—is more complicated. **_All sighted users have substantial contrast needs for best readability._** Some users have impairments that cause a reduced contrast sensitivity, and those users may need higher contrasts in general. 
+
+Note: there are some claims that some users may be over-sensitive to very high contrasts, and they then need lower contrasts in some situations such as with large bold elements. Examining this aspect of contrast perception, we find it is more related to excessively high luminance relative to a particular adaptation state. In otherwords it's not contrast per se, but an excessive luminance range, or a luminous intensity that causes significant glare and related issues. Unfortunately, this idea has been misinterpreted, resulting in poor contrast across the web. Article: [_"Please Stop Using Gray Text"_](https://tangledweb.xyz/please-stop-using-grey-text-3d3e71acfca8)
 
 ## More
 
