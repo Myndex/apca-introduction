@@ -20,10 +20,15 @@ Honestly this is an untenable position. Vision science is not about the math, it
 For the purpose of guidelines that are useful for a designer, and particularly in view of the need of creating light mode/dark mode and other enhanced color modes to address particular applications, a perceptually uniform method is required. xi ignores perceptual uniformity, yet this is the key important aspect of modern vision models.
 
 
-### one-dimensional thinking
-A line from Star Trek Wrath of Kahn comes to mind, in that xi is abstracting the math as if it is one dimensional, but the context is three or more dimensions. In particular, and this is perhaps xi's biggest failure, is that human perception of contrast is substantially affected by spatial frequency. In fact special frequency is more important to contrast than the distance between two colors. Everything in every example that xi is doing fails to consider spatial frequency as the primary driver of contrast.
+### One-dimensional thinking
+A line from _Star Trek Wrath of Kahn_ comes to mind, where Spock states that "Kahn is intelligent, but inexperienced, [**thinking in two dimensions**" (in a three-dimensional environment).](https://www.youtube.com/watch?v=RbTUTNenvCY)
 
-Put another way, xi is applying paint to a rusty car, hoping that will make it run, but the engine is missing.
+xi is abstracting the math as if it can be simplified as one dimensional—but it absolutely cannot be. The context is multi-dimensional, and a one dimensional model absolutely fails to encompass the human vision system. This very basic fact is academic peer-reviewed scientific consensus, yet xi is ignoring it wholesale.
+
+In particular, and this is perhaps xi's biggest failure, human perception of contrast is substantially affected by spatial frequency. Spatial frequency is more important to contrast than the distance between two colors. Everything in every example that xi presents fails to consider spatial frequency as the primary driver of contrast.
+
+As an analogy, xi is applying paint to a rusty car, hoping that will make it run, but he failed to notice that the engine is missing.
+
 
 ### Thresholds are not static
 One of the key fallacies that xi continues to assert, is that "only a single threshold is important" as opposed to perceptual uniformity. But this is a substantial misunderstanding. For instance under WCAG2, the threshold of 4.5 to 1 has a completely different appearance when one of the colors is white than that same threshold when one of the colors is black. And that threshold shifts over the entire visual range, and not in a useful way.
