@@ -157,7 +157,7 @@ Again, this is false. You can not in any reasonable way call applying "log" to s
 
 > _...Even if you consider Weber-Fechner to be outdated, this is still a perceptual model. So both the claims that the other contrast algorithms are not based on perceptually uniform lightness difference and that simple contrast does not consider the logarithmic response characteristics of the human eye are bogus._
 
-### No, what is "bogus" is xi's assertion of falsehoods here.
+### No, what is "bogus" is xi's assertions which amount to falsehoods.
 His claims that _"everything is the same as simple contrast"_ are incredibly uninformed. As mentioned above, predicting contrast is not something that can be reduced to a single point thresholds because the distance between a pair of colors and the resultant contrast perception is a non-linear function, as is most of perception science. 
 
 It appears that he wants the reader to somehow believe that "all contrast maths are perceptual" when we know that is definately not the case, and these simple charts prove this. Some months ago I even posted at xi's repo a listing of the last hundred years of various contrast maths, and their stengths and weaknesses. Yet he is only talking about the 180 year old Weber which was shown to be invalid/incomplete by Stevens in the 1960s. But Tobias is not even considering Stevens here, nor is he discussing the more modern methods.
@@ -174,9 +174,11 @@ In conclusion, xi is looking at the contrast problem incorrectly, making invalid
 
 At this point I have exerted substantial effort in good faith to help Tobias understand the important factors of vision science, but he is not moving toward the path of knowledge, instead seemingly steadfast in presenting this fallacious narrative which ignores the last hundred years of vision science.
 
-I don't know what xi (Tobias Bengfort)'s motiviation is here. The only reason I am taking the time to expose the misleading narrative is that he has taken to posting in W3C areas with spurious claims which must be responded to. At best he is spreading misinformation and that has the potential to cause confusion in an area that is already challenging to understand. However, certain associations he's made imply an intention to harrass and obstruct, which has been the case with a small group of individuals who are intent on maintaining the status quo, flagrantly disregarding peer reviewed science.
+I don't know what xi (Tobias Bengfort)'s motiviation is here. The only reason I am taking the time to expose the misleading narrative is that he has taken to posting in W3C areas with spurious claims which must be responded to. At best he is spreading misinformation and that has the potential to cause confusion in an area that is already challenging to understand. However, certain associations he's made imply an intention to harrass and obstruct, which has been the case with a small group of individuals who appear intent on maintaining the status quo, flagrantly disregarding peer-reviewed science.
 
-### FINAL CONCLUSION: xi/Tobias Bengfort's opinion on this subject is notwithstanding as meritless and unsupportable, 
+Such anti-science positions cannot be allowed to stand. Because this has spilled over into W3C issue posts, I have been compelled to set the record straight.
+
+### FINAL CONCLUSION: xi/Tobias Bengfort's opinion on this subject is unsupportable, therefore notwithstanding.
 
 
 Thank you for reading,
@@ -190,4 +192,4 @@ Inventor of SAPC, APCA, SACAM_
 
 _Any opinions expressed are those of the author and do not necessarily reflect the opinions of the W3C or the AGWG._
 
-## _THE REVOLUTION WILL BE READABLE_™
+## _THE REVOLUTION WILL BE READABLE™_
