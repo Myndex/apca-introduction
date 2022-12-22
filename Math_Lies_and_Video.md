@@ -175,13 +175,13 @@ Xi's "detailed analysis" is similarly unfounded and based on his uninformed beli
 
 ## 4) TL;DR (Summary)
 
-In conclusion, xi is looking at the contrast problem incorrectly, making invalid assumptions and using inappropriate math. The end result is at a misunderstanding and confusion to a field that is already challenging to understand foremost. He does is not clarifying he is obfuscating.
+In conclusion, xi is looking at the contrast problem incorrectly, making invalid assumptions and using inappropriate math. The end result is promoting a misunderstanding, which only causes confusion regarding a field that is already challenging to understand for most. He is not clarifying he is obfuscating.
 
 At this point I have exerted substantial effort in good faith to help Tobias understand the important factors of vision science, but he is not moving toward the path of knowledge, instead seemingly steadfast in presenting this fallacious narrative which ignores the last hundred years of vision science.
 
-I don't know what xi (Tobias Bengfort)'s motiviation is here. The only reason I am taking the time to expose the misleading narrative is that he has taken to posting in W3C areas with spurious claims which must be responded to. At best he is spreading misinformation and that has the potential to cause confusion in an area that is already challenging to understand. However, certain associations he's made imply an intention to harrass and obstruct, which has been the case with a small group of individuals who appear intent on maintaining the status quo, flagrantly disregarding peer-reviewed science.
+I don't know what xi (Tobias Bengfort)'s motiviation is here. The only reason I am taking the time to expose the misleading narrative is that he has been posting issues in W3C WCAG with spurious claims which must be responded to. At best he is spreading misinformation and that has the potential to cause confusion in an area that is already challenging to understand. However, certain associations he's made imply an intention to harrass and obstruct, which has been the case with a small group of recalcitrant individuals who appear intent on flagrantly disregarding peer-reviewed science.
 
-Such anti-science positions cannot be allowed to stand. Because this has spilled over into W3C issue posts, I have been compelled to set the record straight.
+Such anti-science positions cannot be allowed to stand. Because this has spilled over into W3C issue posts, I have been compelled to set the record straight. I am hoping that this is the last time I need to do so.
 
 ### FINAL CONCLUSION: xi/Tobias Bengfort's opinion on this subject is unsupportable, therefore notwithstanding.
 
