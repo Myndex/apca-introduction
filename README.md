@@ -1,17 +1,23 @@
 # Corrected fork of apca-introduction, with comments
-User xi created an unauthorized repo called "apca-introduction" which unfortunately is misleading to say the least. This fork is intended to clarify, make corrections, and set the record straight.
+User xi (Tobias Bengfort) created an unauthorized repo called "apca-introduction" which unfortunately is misleading to say the least. This fork is intended to clarify, make corrections, and set the record straight.
 
 In addition to the corrected ***"The missing introduction to APCA"*** below, this repo also has:
 
 [Derailed analysis of APCA](https://github.com/Myndex/apca-introduction/blob/main/analysis.md) a rebuttle to xi's _"Detailed analysis of APCA"_ which mischaracterizes the differences between various contrast measures.
 
-[Math Lies and Videotape](https://github.com/Myndex/apca-introduction/blob/main/Math_Lies_and_Video.md) Or put another way, _"How to use math to lie"_. This is a response to a lengthy blog post xi made that is rife with errors and misconceptions, and only serves to confuse and not enlighten on the topic.
+[Math, Lies, and Videotape](https://github.com/Myndex/apca-introduction/blob/main/Math_Lies_and_Video.md) Or put another way, _"How to use math to lie"_. This is a response to a lengthy blog post xi made that is rife with errors and misconceptions, and only serves to confuse and not enlighten on the topic.
 
-There are also a [large number of issue posts](https://github.com/xi/apca-introduction/issues?q=is%3Aissue) objecting to the misleading information presented at xi's repo. xi has closed many of them without action, so if reviewing, look at the closed issues.
+There are also a [large number of issue posts](https://github.com/xi/apca-introduction/issues?q=is%3Aissue) objecting to the misleading information presented at xi's repo. xi has closed many of them without action, so if reviewing, it is important to look at the closed issues. Topias has attempted to foster his miss information to other repos and other vision scientists who have summarily shut him down.
 
-------
+## *In a nutshell:*
+To be sure, vision science is a dense, complicated, and abstract subject that is difficult to understand. And the misunderstandings presented by Topias potentially have a very negative effect toward fostering the continued misunderstandings and myths surrounding vision and contrast that exist today, particularly within the accessibility community. 
+
+### It is a primary goal of our research to educate and promote the truthfull understanding of the important characteristics of vision as they apply to readability and accessibility for all humankind.
 
 
+-----
+
+-----
 # The missing introduction to APCA
 
 ## *What is APCA in three sentences:*
