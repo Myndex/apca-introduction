@@ -15,7 +15,6 @@ To be sure, vision science is a dense, complicated, and abstract subject that is
 ### It is a primary goal of our research to educate and promote the truthfull understanding of the important characteristics of vision as they apply to readability and accessibility for all humankind.
 
 -----
-APCA began as a research project to address the serious failings of WCAG 2.x contrast, beginning with [Thread 695](https://github.com/w3c/wcag/issues/695) linked here for historical purposes.
 
 A revision/correction of xi's provacatively named _"The missing introduction to APCA"_ follows below.
 
