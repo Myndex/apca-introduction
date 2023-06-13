@@ -14,11 +14,14 @@ To be sure, vision science is a dense, complicated, and abstract subject that is
 
 ### It is a primary goal of our research to educate and promote the truthfull understanding of the important characteristics of vision as they apply to readability and accessibility for all humankind.
 
-
 -----
+APCA began as a research project to address the serious failings of WCAG 2.x contrast, beginning with [Thread 695](https://github.com/w3c/wcag/issues/695) linked here for historical purposes.
+
+A revision/correction of xi's provacatively named _"The missing introduction to APCA"_ follows below.
 
 -----
 # The missing introduction to APCA
+(Note that the actual introduction is not missing, it is called [***Why APCA***](https://git.apcacontrast.com/documentation/WhyAPCA).)
 
 ## *What is APCA in three sentences:*
 It is a supra threshold visual contrast prediction model that is specifically tuned to readability on self-illuminated displays. It follows human perception, including critical aspects such as spatial frequency, meaning font weight and size. The APCA guidelines also inform various use cases, such as body text, fluent text, spot reading text, and non-text items.
