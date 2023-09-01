@@ -102,6 +102,7 @@ function contrastAPCA(tx, bg) {
 - WCAG&nbsp;2.x produces a ratio between 1:1 and 21:1. APCA produces a value roughly between -108 to 0 for light text (on a dark background), and 0 to 106 for dark text.
     - Unlike WCAG&nbsp;2.x, APCA reports different values when you switch text color and background color (polarity sensitivity).
     - The result of APCA is negative for light text on dark background. You will usually work with the absolute value though, except for maximum contrast which is presently set at Lc -90.
+ 
 **Thresholds**
 - WCAG 2.x defined three thresholds: 3:1, 4.5:1, and 7:1.
     - These *roughly* correspond to Lc45, Lc60, and Lc75 as functionally equivalent, but not backwards compatible. 
@@ -113,6 +114,7 @@ function contrastAPCA(tx, bg) {
     - Lc60: Medium (>24px) fluent text
     - Lc75: Minimum for body text (>18px)
     - Lc90: Preferred for body text
+ 
 **Practical Application**
 - Compared to WCAG&nbsp;2.x, APCA reports drastically lower contrast for darker colors. It also reports slightly higher contrast for lighter colors. This is in accordance with human perception.
 - Unlike WCAG&nbsp;2.x, APCA divides needed contrast into use case categories.
