@@ -80,14 +80,14 @@ xi is attempting to reverse engineer the APCA Lc curves, but what xi is not doin
 
 With the patents pending/applied for, we've felt comfortable presenting the math/methods publicly. Doing so makes reverse engineering trivial, meaning that uninformed hacks can twist things around—but make no mistake, they are doing a disservice in that they create confusion and elevate misunderstanding. 
 
-### *But also, reverse engineering is IP theft*.
+## *But also, reverse engineering is IP theft*.
 
-**Personal note:** if anyone is curious as to why I may seem a little bent out of shape here, it just may have something to do with some hack that knows nothing of visual perception attempting a clumsy reverse engineering of three years of research and development and then posting a misleading "analysis".
+### *Personal note:* if anyone is curious as to why I may seem a little bent out of shape here, it just may have something to do with some hack that knows nothing of visual perception attempting a clumsy reverse engineering of three years of research and development and then posting a misleading "analysis".
 
 For xi's benefit I listed some of the historical contrast methods here: https://github.com/xi/apca-introduction/issues/17#issuecomment-1217843920 
 
 
-### The purpose of this fork from xi's repo
+## The purpose of this fork from xi's repo
 The xi/apca-introduction repo is rife with misleading, inaccurate, and even false statements. It is using inappropriate examples that are seemingly designed to "wash away" the actual and important aspects of the contrast methods that he claims are being evaluated.
 
 This fork is my attempt to [**provide a rebuttle**](https://github.com/Myndex/apca-introduction/blob/main/analysis.md) to xi's poorly conceived analysis (or if not poorly conceived it is intentionally derisive and obstructing. Determining the true motivation here is difficult as Tobias has been specifically evasive on this issue.)
