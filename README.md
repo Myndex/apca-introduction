@@ -1,15 +1,10 @@
 # Corrected fork of apca-introduction, with comments
-User xi _(Tobias Bengfort)_ created an unauthorized repo called _"apca-introduction"_ which unfortunately is misleading. This fork is intended to clarify, make corrections, and set the record straight.
-
-The single most important failure of xi's repo and assertions, is that he completely fails to address the primary driver of contrast, which is the spatial characteristics. In fact, his demonstrations and calculations seem to intentionally obfuscate that fact, by using test elements that are spatially above the point of contrast constancy, which make any comparison moot. Those misleading demonstrations are also corrected here in this repo.
-
-The corrected ***"The missing introduction to APCA"*** below was revised for accuracy only, with the intention of maintaining xi's original tone and simplicity. In addition, this repo also addresses the other documents xi put forth.
+User xi _(Tobias Bengfort)_ created an unauthorized repo called _"apca-introduction"_ which unfortunately is misleading. This fork is intended to clarify, make corrections, and set the record straight. The corrected ***"The missing introduction to APCA"*** below was revised for accuracy only, with the intention of maintaining xi's original tone and simplicity. 
 
 -----
 # The missing introduction to APCA
-(Note that the actual introduction is not missing, it is called [***Why APCA***](https://git.apcacontrast.com/documentation/WhyAPCA).)
-
-**Edit to add:** And there is a new plain language intro, intended for a general audience called ["Easy Intro to APCA"](https://git.apcacontrast.com/documentation/APCAeasyIntro)
+- Note that the actual introduction is not missing, it is [***Why APCA***](https://git.apcacontrast.com/documentation/WhyAPCA).
+    - And new in 2023, there is a new plain language overview: ["Easy Intro to APCA"](https://git.apcacontrast.com/documentation/APCAeasyIntro)
 
 
 ## *What is APCA in three sentences:*
@@ -27,12 +22,12 @@ As shown above, WCAG&nbsp;2 contrast fails most with dark colors, and the result
 **And a [more in depth](https://git.myndex.com) link catalog.**
 
 
-The [Accessible Perceptual Contrast Algorithm (APCA)](https://apcacontrast.com/)
+The [Accessible Perceptual Contrast Algorithm (APCA)](https://apcacontrast.com)
 is a new algorithm to predict the perceived lightness contrast between two adjacent colors. It was developed to address some issues in earlier algorithms, especially for dark colors, or when the text is lighter than the background.
 
 APCA was created by Andrew Somers at Myndex Research, and under the oversight of the Visual Contrast subgroup of Silver, and is the candidate method for contrast for WCAG&nbsp;3 (W3C Accessibility Guidelines).
 
-The official interactive demo is available at [apcacontrast.com/](https://apcacontrast.com/). No other link is canonical nor officially approved.
+The official interactive demo is available at [apcacontrast.com](https://apcacontrast.com). No other link is canonical nor officially approved.
 
 ## Algorithm
 
@@ -122,11 +117,11 @@ This comparison uses achromatic grays as those define readability, making the co
 
 ## Status
 
-WCAG&nbsp;2 is a guideline developed and recommended by the W3.org. While WCAG&nbsp;2 is not legally binding itself, it has become a normative part of some regulations in some specific jurisdictions around the globe. The fact that there is a need to define contrast specifications for legal reasons makes it all the more important that there be a perceptually accurate contrast method to do so. This need led to the Genesis of the APCA.
+WCAG&nbsp;2 is a guideline developed and recommended by the W3.org. While WCAG&nbsp;2 is not legally binding itself, it has become a normative part of some regulations in some specific jurisdictions around the globe. The fact that there is a need to define contrast specifications for legal reasons makes it all the more important that there be a perceptually accurate contrast method to do so. This need was the Genesis of the APCA.
 
 Currently both APCA and the future WCAG&nbsp;3.0 are in active development. At the time of this writing, neither is officially recommended by the W3C.
 
-APCA is also being developed independently for other standards and guidelines beyond web content, and is rapidly being adopted by software developers and content designers.
+APCA is also being developed independently for use in other standards and guidelines beyond web content, and is rapidly being adopted by software developers and content designers.
 
 ## Evaluating APCA
 
@@ -141,4 +136,55 @@ Note: there are some claims that some users may be over-sensitive to very high c
 ## More
 
 For a deeper dive, start with ["Easy Intro to APCA"](https://git.apcacontrast.com/documentation/APCAeasyIntro) and the  [short linktree](https://linktr.ee/Myndex) and the more in depth [link catalog](https://git.myndex.com) of related resources.
+
+## Why This Document
+This is a rebuttal and discussion of xi's "Why This Document". In the original, xi claimed:
+
+> _...it was born out of my personal frustration with the original
+ documentation. Some important pieces of information (e.g. the actual algorithm)
+ get buried under all that text..._
+
+**This argument is unpersuasive.**
+- First, there was a clearly marked plain language introduction called [***Why APCA***](https://git.apcacontrast.com/documentation/WhyAPCA) which was published a year before xi created this repo. 
+- Second, the [actual algorithm](https://github.com/Myndex/SAPC-APCA/blob/master/documentation/APCA-W3-TeX.md) is literally the ***very first document*** in the documentation folder. And the remaining documentation is broken down by subject, again in that folder.
+
+This indicates that xi did not actually read nor look into the documentation. In fact I even explained all of this to him directly in [a thread at the APCA repo](https://github.com/Myndex/SAPC-APCA/discussions/79) a few weeks before he created his repo. As a matter of my own opinion, this points to underlying motivation which I'll discuss below.
+
+Perhaps it's useful to add that a **chairperson of the W3C AGWG** had asked me to *"remove the math"* from the basic documentation to make it easier to read. In response, I put the math into its own separate file **clearly marked** at the top of the documentation folder.
+
+
+> _The original documentation also contains absolute statements like "APCA is
+ perceptually uniform" and that the old algorithm produces "invalid results"._
+
+***This statement is verifiably false***.
+
+Nowhere in the published documentation have I ever stated that *"WCAG&nbsp2 produced invalid results"*. Nowhere. What I have said is *"WCAG&nbsp2 far overstates contrast for dark colors"* which is verifiably true. I have stated that WCAG&nbsp2 has inherent problems, but with that listed specifically what those problems are. xi's use of provacative language such as _"...contains absolute statements..."_ is surely intended to discredit. Nevertheless, APCA is preceptually uniform in the context of text on a self-illuminated display. This has been tested, studied, peer-reviewed, and discussed at length. It is the principla reason that APCA is being widely adopted.
+
+Again, this points to motivation.
+
+
+> ..._in my opinion is wrong as perceptual uniformity is an ideal that can never
+ be reached completely. So I felt like there was room for a more balanced
+ introduction._
+
+xi is, by his own admission, not knowledgable in the field of vision science. From his analysis document:
+
+> _I am a regular web developer with a bachelor's degree in math, but without any training in the science around visual perception. That's why I cannot evaluate whether APCA is better than WCAG 2.x._
+
+I don't know if I should read this as a form of gaslighting? Because the rest of his documentation is indeed purporting to evaluate. What then is the purpose of his repo and discussions? Despite good faith best efforts to present references to the relevant science to xi, and help him climb the learning curve, he has not made a visible effort to understand. Mea culpa for any writing of mine where I am not presenting the information in an easy to digest fashion, but at this point I question if that would be of help.
+
+**Motivation** is the question at this point. It is well known that there are a small group of individuals that are opposed to myself (personally) and my work, for reasons that are unclear. They have directly and maliciously obstructed my work with the W3C. xi has links in his repo that appear to connect him to these individuals in some way, and the nature of his issue post #651 in silver would appear to support this conclusion. Is xi associated with the obstructionist group? I don't know conclusively at this time, as the evidence is circumstantial.
+
+Nevertheless, what is the motivation here? Are we lost in translation? 
+
+His claims for why he created this fall flat in that it is clear he did not so much as open the documentation folder, where the relevant documentation is and clearly labeled. This despite the aforementioned discussion thread where I was directly at his disposal and answering his queries. The implication here, or at least the appearaance, is that a third party fed a narrative, or encouraged a bias.
+
+## TL;DR
+The most important deficit of xi's assertions is the failure to recogize [spatial characteristics](https://github.com/Myndex/SAPC-APCA/discussions/90) as the primary driver of contrast for text. It appears his demonstrations and calculations are biased to obfuscate that fact, using test elements spatially above the point of contrast constancy, and not using the actual APCA code nor methods. These issues were corrected here. The other documents in the repo have also been revised or commented on, including his "analysis".
+
+## Official Introduction
+- The easy to read plain language overview is: ["Easy Intro to APCA"](https://git.apcacontrast.com/documentation/APCAeasyIntro)
+- A comprehensive peer-reviewed overview of the relevant vision and color science is: [Realities and Myths of Color and Contrast](https://www.smashingmagazine.com/2022/09/realities-myths-contrast-color/)
+    - The first comment on this article is from **xi** (Tobias Bengfort) to which I provided an in-depth reply.
+- There is an open discussion area for APCA at the [main repo discussion area](https://github.com/Myndex/SAPC-APCA/discussions). Please feel free to comment or ask questions.
 
