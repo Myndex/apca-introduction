@@ -158,7 +158,7 @@ Perhaps it's useful to add that a **chairperson of the W3C AGWG** had asked me t
 
 ***This statement is verifiably false***.
 
-Nowhere in the published documentation have I ever stated that *"WCAG&nbsp2 produced invalid results"*. Nowhere. What I have said is *"WCAG&nbsp2 far overstates contrast for dark colors"* which is verifiably true. I have stated that WCAG&nbsp2 has inherent problems, but with that listed specifically what those problems are. xi's use of provacative language such as _"...contains absolute statements..."_ is surely intended to discredit. Nevertheless, APCA is preceptually uniform in the context of text on a self-illuminated display. This has been tested, studied, peer-reviewed, and discussed at length. It is the principla reason that APCA is being widely adopted.
+Nowhere in the published documentation have I ever stated that *"WCAG&nbsp2 produced invalid results"*. Nowhere. What I have said is *"WCAG&nbsp2 far overstates contrast for dark colors"* which is verifiably true. I have stated that WCAG&nbsp2 has inherent problems, but with that listed specifically what those problems are. xi's use of provocative language such as _"...contains absolute statements..."_ is surely intended to discredit. Nevertheless, APCA is perceptually uniform in the context of text on a self-illuminated display. This has been tested, studied, peer-reviewed, and discussed at length. It is the principal reason that APCA is being widely adopted.
 
 Again, this points to motivation.
 
@@ -177,10 +177,10 @@ I don't know if I should read this as a form of gaslighting? Because the rest of
 
 Nevertheless, what is the motivation here? Are we lost in translation? 
 
-His claims for why he created this fall flat in that it is clear he did not so much as open the documentation folder, where the relevant documentation is and clearly labeled. This despite the aforementioned discussion thread where I was directly at his disposal and answering his queries. The implication here, or at least the appearaance, is that a third party fed a narrative, or encouraged a bias.
+His claims for why he created this fall flat in that it is clear he did not so much as open the documentation folder, where the relevant documentation is and clearly labeled. This despite the aforementioned discussion thread where I was directly at his disposal and answering his queries. The implication here, or at least the appearance, is that a third party fed a narrative, or encouraged a bias.
 
 ## TL;DR
-The most important deficit of xi's assertions is the failure to recogize [spatial characteristics](https://github.com/Myndex/SAPC-APCA/discussions/90) as the primary driver of contrast for text. It appears his demonstrations and calculations are biased to obfuscate that fact, using test elements spatially above the point of contrast constancy, and not using the actual APCA code nor methods. These issues were corrected here. The other documents in the repo have also been revised or commented on, including his "analysis".
+The most important deficit of xi's assertions is the failure to recognize [spatial characteristics](https://github.com/Myndex/SAPC-APCA/discussions/90) as the primary driver of contrast for text. It appears his demonstrations and calculations are biased to obfuscate that fact, using test elements spatially above the point of contrast constancy, and not using the actual APCA code nor methods. These issues were corrected here. The other documents in the repo have also been revised or commented on, including his "analysis".
 
 ## Official Introduction
 - The easy to read plain language overview is: ["Easy Intro to APCA"](https://git.apcacontrast.com/documentation/APCAeasyIntro)
