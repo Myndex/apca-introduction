@@ -1,23 +1,9 @@
 # Corrected fork of apca-introduction, with comments
-User xi _(Tobias Bengfort)_ created an unauthorized repo called _"apca-introduction"_ which unfortunately is misleading to say the least. This fork is intended to clarify, make corrections, and set the record straight.
+User xi _(Tobias Bengfort)_ created an unauthorized repo called _"apca-introduction"_ which unfortunately is misleading. This fork is intended to clarify, make corrections, and set the record straight.
 
-The corrected ***"The missing introduction to APCA"*** below was revised for accuracy only, with the intention of maintaining xi's original tone and simplicity. In addition, this repo also has:
+The single most important failure of xi's repo and assertions, is that he completely fails to address the primary driver of contrast, which is the spatial characteristics. In fact, his demonstrations and calculations seem to intentionally obfuscate that fact, by using test elements that are spatially above the point of contrast constancy, which make any comparison moot. Those misleading demonstrations are also corrected here in this repo.
 
-[Derailed analysis of APCA](https://github.com/Myndex/apca-introduction/blob/main/analysis.md) a rebuttal to xi's _"Detailed analysis of APCA"_ which mischaracterizes the differences between various contrast measures.
-
-[Math, Lies, and Videotape](https://github.com/Myndex/apca-introduction/blob/main/Math_Lies_and_Video.md) Or put another way, _"How xi uses math to lie"_. This is a response to a lengthy blog post xi made that is rife with errors and misconceptions, and only serves to confuse and not enlighten on the topic.
-
-There are also a large number of issues posted at xi's repo, objecting to the misleading information. Tobias has closed many of them without action, so if reviewing, include the closed issues. Tobias has attempted to foster misinformation to other repos and to other vision scientists, who have summarily shut him down. His motivation is unclear, however some links he uses appear to tie him to a certain group of cognitively-dissonant obstructionists.
-
-## *In a nutshell:*
-To be sure, vision science is a dense, complicated, and abstract subject that is difficult to understand. And the misunderstandings presented by xi/Tobias potentially have a very negative effect toward fostering the continued misunderstandings and myths surrounding vision and contrast that exist today, particularly within the accessibility community. 
-
-### It is a primary goal of our research to educate and promote the truthful understanding of the important characteristics of vision as they apply to readability and accessibility for all humankind.
-
------
-APCA began as a research project to address the serious failings of WCAG 2.x contrast, beginning with [Thread 695](https://github.com/w3c/wcag/issues/695) linked here for historical purposes.
-
-A revision/correction of xi's provocatively named _"The missing introduction to APCA"_ follows below.
+The corrected ***"The missing introduction to APCA"*** below was revised for accuracy only, with the intention of maintaining xi's original tone and simplicity. In addition, this repo also addresses the other documents xi putforth.
 
 -----
 # The missing introduction to APCA
