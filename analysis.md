@@ -15,7 +15,8 @@ training in the science around visual perception**. That's why I cannot evaluate
 whether APCA is *better* than WCAG 2.x. Instead this is a systematic
 comparison of their mathemetical properties._
 
-It is important to note that xi admits to no knowledge of the science of visual perception. With this the case, I'd certainly prefer that xi not state unsupported/uninformed opinions as if they were facts. I bring this point up, as it is clear he has basic misunderstandings regarding the field of vieual perception. Despite his demonstated lack of understanding, xi's analysis makes a number of unsupported assertions and leaps of logic that serve to mislead the reader.
+> [!IMPORTANT]
+> In his analsys, xi admits to **no knowledge of the science of visual perception**. With this the case, I'd certainly prefer that xi not assert unsupported/uninformed opinions as if they were facts. I bring this point up, as it is clear he has basic misunderstandings regarding the field of vieual perception. Despite his demonstated lack of understanding, xi's analysis makes a number of unsupported assertions and leaps of logic that serve to mislead the reader. 
 
 > ## _Context: The Web Content Accessibility Guidelines (WCAG)_
 
@@ -26,7 +27,7 @@ a good read._
 
 WCAG 2 is _not_ a normative part of "many" laws. Internationally, _some_ nations use WCAG 2 as the basis for regulation relating to governmental websites. WCAG 2 is not law in the United States except in some narrow areas (25% of airport kiosks must follow WCAG2). WCAG 2.0 is part of the 508 government regulations which apply to government web sites and government procurement of certain IT. 508 has two major exceptions: **1) alternate means**. This allows any alternative method other than WCAG to be used, provided it improves actual accessibility, **2) Commercially available**. If the technology that follows WCAG 2 is not commercially available, then WCAG does not need to be followed for that specific critera.
 
-It is extremely rare for WCAG 2 to be "legally" applied across the board. In the United States, the ADA does not specify WCAG 2 as a standard, but does say that sites that are public accomodations must be acccessible — arguably, working for actual accessibility (as opposed to certain arbitrary goal posts) is best practice here. To be noted, the Winn-Dixie case in Florida was vacated, IIRC that _was_ the only Federal case that held support for WCAG 2, but no longer citable.
+It is extremely rare for WCAG 2 to be "legally" applied across the board. In the United States, the ADA does not specify WCAG 2 as a standard, but does say that sites that are public accomodations must be acccessible — arguably, working for actual accessibility (as opposed to certain arbitrary goal posts) is best practice here. To be noted, the Winn-Dixie case in Florida was **vacated**, meaning it can not be cited/referenced. IIRC that _was_ the only Federal case that held support for WCAG 2, but no longer citable.
 
 The Domino's case regarded if they had to abide by ADA, not WCAG. 
 
@@ -179,7 +180,7 @@ The weights here are derived from the CIE 1931 2° standard observer. While the 
 
 At any rate, the expected luminance will vary, but is still not the perceptual lightness, which is different from the emitted luminance, and related to a number of contextual factors.
 
-Again:
+### Again:
 
 **Luminance** is a physical measure of light in the real world, but it is not perceptual lightness.
 
@@ -198,7 +199,7 @@ Weber is nothing more than a log of the stimulus to a reference. While it is tru
 
 This cherry picking of my very early public research notes and comments to make this point is annoying to say the least, but I suppose that is a consequence of performing research out in the open. 
 
-Where Weber has some utility in terms of research for the purposes of certain comparisons, It is not useful for design guidance in today's world of grpahicslly rich web content, especially with the need for dynamic changes.
+Where Weber has some utility in terms of research for the purposes of certain comparisons, It is not useful for design guidance in today's world of graphicslly rich web content, especially with the need for dynamic changes.
 
 > _The shift by 1 is removed
 because it has no impact on the results (as long as the thresholds are adapted
@@ -206,16 +207,20 @@ accordingly)._
 
 The problem here is that it results in incongruent results compared to other methods, and therefore increases confusion in what is already a difficult subject matter. Put another way, "will the real contrast math please stand up?" If 3:1 means something different in half a dozen different standards, then the entirty of the discussion become murky and obfuscated. 3:1 in WCAG 2 is different that 3:1 in some other standards, for instance, yet 3:1 in those standards are referenced as cites by WCAG 2 — see the problem? 
 
+And not to belabor the point but an eminent vision scientest, who originally suggested 7:1 back in 2005, but who was not involved in the choice of 4.5:1/3:1, wrote an [interesting article](https://jov.arvojournals.org/article.aspx?articleid=2628138) pointing out the **lack of empirical evidence** in these standards, even for 3:1. The article is quite illuminating.
+
 > _Finally, the polarity is removed so that the formula has the same results when
 the two colors are switched._
-
 > _All in all this is a pretty solid contrast formula (at least from a theoretical
 perspective), as it just reuses parts from well established standards._
 
-The only part of this that is the "contrast formula" is the `(ybg + 0.05) / (yfg + 0.05)` which was not a part of any standard anywhere, and created specifically as a proposal for WCAG 2 and even then, only for supporting the 7:1 ratio. Only. **So claiming it was somehow founded in "well established standards" is patently false.** 
+False statement.
+
+The only part of the above that counts as the "contrast formula" is the `(ybg + 0.05) / (yfg + 0.05)` which was **not** a part of any other standard *anywhere*, and created specifically as a proposal for WCAG 2, and even then, it was created only for supporting the 7:1 ratio. Only. **So claiming it was somehow founded in "well established standards" is patently false.** The shift to 4.5:1 and 3:1 did not involve the individual that created it for 7:1.
 
 Also, the original, which still exists in WCAG 2.0 is also not using the correct math for the conversion to luminance (this was only recently corrected for WCAG 2.2), though this is a minor issue, it points to the lack of due diligence in developing the original WCAG 2 contrast math.
 
+1.4.3 was not tested and not peer reviewed, not based on empirical evidence, and was even objected to by IBM back in 2007. It is still objected to, and should never be codifed into law.
 
 > ### _APCA_
 
@@ -427,7 +432,7 @@ they are monotonous on the contrast ratio)._
 
 No, and for the same reasons this is an incorrect approach as defined above.
 
-But to add, this analysis is mixing up light (luminance) and lightness, and making spurious comparisons.
+But to add, this analysis is mixing up light (luminance) vs lightness, and making spurious comparisons.
 WCAG 2 does not use perceptual lightness at all. Period. It uses a ratio of luminances.
 
 APCA uses a difference of percpetual lightnesses that have been adjusted for certain contextual considerations.
@@ -482,7 +487,7 @@ of color pairs and computed the normalized APCA contrast, WCAG 2.x contrast
 (without removing the polarity) and the modified WCAG contrast with an ambient
 light value of 0.4._
 
-0.4 is not an "ambient light value" and again underscores a misunderstanding of the science here. All the 0.4 is is a brute force manipulation of the WCAG2 math, but it is unsupportable by any actual facts.
+0.4 is not an "ambient light value" - what it would mean is that 40% of the ambient light in the room was reflecting off the display face. If this were the case, you' be unable to see what was on the display. This again underscores a misunderstanding of the science here. All the 0.4 is is a brute force manipulation of the WCAG2 math, but it does not fix the problem, and is unsupportable by any actual facts.
 
 ![contrast comparison](plots/contrast_comparison.png)
 
@@ -506,15 +511,20 @@ Again, these scatter plots serve only to confuse, and not to illuminate, They ar
 
 ### A mathematically accurate comparison of WCAG 2 and APCA [can be seen here](https://github.com/Myndex/SAPC-APCA/discussions/30#discussioncomment-1904967).
 
+Here are two, click for larger. Light blue are colors WCAG passes but APCA rejects. Purple are colors that pass both, magenta is colors that pass APCA, but not WCAG2:
+
+<img width="240" alt="W451backgroundLc60 WCAG 2 and APCA comparison chart" src="https://user-images.githubusercontent.com/42009457/148043153-4bb1e13c-0dbc-455f-aadf-7a722924c993.jpg"><img width="240" alt="W451backgroundLc75 WCAG 2 and APCA comparison chart" src="https://user-images.githubusercontent.com/42009457/148043156-6550aec5-02c0-42f4-8af4-2512752c89de.jpg">
+
+
 > _To sum up, the APCA contrast formula is certainly not as obvious a choice as
 the one from WCAG 2.x._
 
-I don't know what that means.
+I don't know what that means. 47% of the colors WCAG 2 result in inaccessible, unreadable content. This makes WCAG2 contrast a terrible choice for any guidelines, and ununsable for automated context such as color-contrast().
 
 > _I was not able to find much information on how it was
 derived._
 
-There are multiple white papers and extensive documentation regarding how APCA was developed and the peer reviewed scientific consensus of CAMs and Vision science upon which APCA rests. Again, the place to start is [git.myndex.com](https://git.myndex.com) It is clear that xi has not actually read the documentation, and this opinion is based on my other interactions with him, such as when he was claiming he "could not find the math" when it is literally the FIRST document in the documentation folder at the repo, and also listed in all of the white papers, and in multiple readme files.
+There are multiple white papers and extensive documentation regarding how APCA was developed and the peer reviewed scientific consensus of CAMs and vision science upon which APCA rests. Again, the place to start is [git.myndex.com](https://git.myndex.com) It is clear that xi has not actually read the documentation, and this opinion is based on my other interactions with him, such as when he was claiming he "could not find the math" when it is literally the FIRST document in the documentation folder at the repo, and also listed in all of the white papers, and in multiple readme and documentation files.
 
 
 > _A closer analysis reveals that it is actually not that different from
@@ -522,27 +532,30 @@ WCAG 2.x, but assumes much more ambient light. More research is needed to
 determine if this higher ambient light value is significant or just an
 artifact of the conversion I did._
 
-This is again a spurious statement coming from a layperson. None of these assertions have any relevance to ambient light. And the "not that different" statement is not borne out by actual analysis that demonstrates that WCAG2 **_incorrectly_** passes 47% of random color pairs, and **_incorrectly_** rejects 22% to 60% of random color pairs.
+This is again a spurious statement coming from a layperson. None of these assertions have any relevance to ambient light. And the "not that different" statement is not borne out by the actual analysis that demonstrates that WCAG2 **_incorrectly_** passes 47% of random color pairs, and **_incorrectly_** rejects 22% to 60% of random color pairs.
 
-And this is not even delving into use cases and the extended APCA guidelines, which xi has ignored for the entirty of this analysis.
+And this is not even delving into use cases and the extended APCA guidelines, which xi has ignored for the entirety of this analysis.
 
 > _As we have seen, using a polarity-aware difference instead of a ratio is not a
 significant change in terms of results. However, in terms of developer
 ergonomics, I personally feel like it is easier to work with. So I would be
 happy if this idea sticks._
 
-Polarity awareness adds approximately 10% to 15% in accuracy. 
+Polarity awareness adds approximately 15% in accuracy, and is important for dark mode to facilitate a maximum contrast value to prevent halation. 
 
 Outside of polarity, APCA results are significantly different, as already discussed and demonstrated.
 
 > ### _Spatial frequency_
 > _Smaller text is generally harder to read than bigger text._ 
 
-No, text is easiest to read within the range of 0.2° to 2.0° of visual angle (Legge et alia)
+Logical fallacy, using undefined adjectives.
+
+In short, no, text is easiest to read within the range of 0.2° to 2.0° of visual angle (Legge et alia)
 
 > _In a more general sense, we can speak about the spatial frequency of **features**. This is usually measured in cycles per degree (cpd), since the visual field is measured as an angle._
 
-We speak of the spatial frequency of stimuli. The size of the retinal image is defined as visual angle. The capital E is 2.5 cycles vertically.
+> [!NOTE]
+> We speak of the spatial frequency of stimuli. The size of the retinal image is defined as visual angle. The capital E of the 20/20 line on an eye chart is 2.5 cycles vertically (5 arc minutes of visual angle).
 
 > _If content is easy to read because of its spacial frequency, I do not need as much color contrast. On the other hand, if the spatial frequency is bad, more color contrast is needed._
 
@@ -558,19 +571,21 @@ The contrast constancy effect _IS ALSO a product of spatial frequency_, and it i
 And we can set that aside, as we have the seminal research of Lovie-Kitchin et alia to guide us on critical thresholds for size and contrast—seminal research that was ignored in WCAG 2,** despite being available for over a decade when WCAG 2 contrast was being developed.**
 
 
-> _Interestingly, a lower spatial frequency is not always easier to read though. Studies have shown that the optimal spatial frequency is at about 5-7 cycles per degree. Below that, features get slightly harder to detect. (Perhaps that is the reasons for the "you don't see the forest among the trees" phenomenon.)_
+> _Interestingly, a lower spatial frequency is not always easier to read though. [Studies have shown] that the optimal spatial frequency is at about 5-7 cycles per degree. Below that, features get slightly harder to detect. (Perhaps that is the reasons for the "you don't see the forest among the trees" phenomenon.)_
 
-You are conflating different bits of data, including non-relevant aspects of the CS curve. Again see Legge et alia.
+You are conflating different bits of data, including non-relevant aspects of the CS curve. Again see Legge et alia. Moreover, getting cites from Wikipedia, without checking the actually literature, is bad practice. Your statement here is incorrect. Peak sensitivity is spatial frequencies of 2-5 cpd, and sensitivity falls off very rapidly above that. 20/20 vision needs letters to be about 18-30&nbsp;cpd for minimum recognition. Legge et alia show that the range of 0.2° and 2.0° of visual angle is the best readability. All this is academic.
 
 The CS curve is created using sinusoidal gratings. However, text has a "sharp edge" therefore large bold text is a combination of _both_ low and high spatial frequencies (see signal theory and square waves).
 
-PEAK contrast sensitivity is approx. 2 to 4 cpd. However, a basic latin letterform can be defined as ~2.5 cycles. (The vertical dimension of capital E is 2.5 cycles).
+> [!NOTE]
+> PEAK contrast sensitivity is approx. 2 to 5 cycles per degree. A basic latin letterform can be defined as ~2.5 cycles total vertically. The size of the letterform then indicates how many cycles exist per degree of visual angle. at 0.2° or (12 arc minutes) this implies a lower bound of 25 cpd, or an x-height of 12 arc minutes or 9.4px, which translates to a minimum font size of 18px (for a 0.52 ratio x height, such as Helvetica or Arial). 
 
-### The scientific consensus on "best readability" is text where letterforms subtend between 0.2° and 2.0° of visual angle. (Lovie-Kitchen, Whittacker, Bailey, Legge et alia)
+> [!IMPORTANT]
+> ### The scientific consensus on "best readability" is text where letterforms subtend between 0.2° and 2.0° of visual angle. (Lovie-Kitchen, Whittacker, Bailey, Legge et alia).
 
 > _It is not obvious how to define spatial frequency in the context of the web._ 
 
-Except that **_it is obviously defined_** in CSS with the CSS reference px which is further defined as 1.278 arc minutes of visual angle.
+Except that **_it is obviously defined_** in CSS with the CSS reference `px` which is further defined as 1.278 arc minutes of visual angle.
 
 > _For text, font size and weight certainly play a role. But different fonts have wildly different interpretations of these values._
 
@@ -578,7 +593,7 @@ Except that **_it is obviously defined_** in CSS with the CSS reference px which
 
 > _Since fonts depend on user preference, we cannot know beforehand which fonts will be used._
 
-This is a bizarre statement, and incorrect. Fonts do not "depend on user preference" they are defined in the CSS, therefore the author definitely knows before hand what font(s) they are choosing.
+This is a bizarre statement, and incorrect. Fonts do not "depend on user preference" they are defined in the CSS, therefore the content author definitely knows before hand what font(s) they are choosing.
 
 > _We also don't know the size of device pixels or how far the user is from the screen._
 
@@ -593,7 +608,7 @@ As for device pixels, we don't need to know that, that is up to the manufacturer
 
 WCAG 2 ignores it, though there is a single breakpoint at 24px, which happens to be about the point where antialiasing effects come into play. It is not really relevant to spatial frequency, as it goes on to say 18.7px for Bold, which is a much lower spatial frequency. I.e. the SF are not aligned in WCAG 2, and claims to the contrary are simply revisionist.
 
-APCA guidelines on matching to the reference font are [here](https://github.com/Myndex/SAPC-APCA/discussions/28).
+APCA guidelines for matching to the reference font [**are here**](https://readtech.org/ARC/tests/visual-readability-contrast/?tn=methods#size-weight).
 
 
 > ### _WCAG 2.x_
@@ -683,7 +698,8 @@ meet contrast requirements. Spatial frequency is not considered in this case.
 It is also not always clear which parts of the UI are decorative and which are
 actually relevant._
 
-And 1.4.11 is one of the most incorrect SCs of WCAG 2, and is citing self-referential and unsupportable documentation, and importantly, fully disregarding spatial frequency in an SC where spatial frequency is of the most importance.
+> [!NOTE]
+> And 1.4.11 is one of the most incorrect SCs of WCAG 2, and is citing self-referential and unsupportable documentation, and importantly, fully disregarding spatial frequency in an SC where spatial frequency shoudl be of key importance.
 
 
 > ### _APCA_
@@ -692,7 +708,7 @@ And 1.4.11 is one of the most incorrect SCs of WCAG 2, and is citing self-refere
 spatial frequency has a lot of potential for non-text content. I could not yet
 find any discussion of that though._
 
-Non-text contrast has long been a part of APCA. It is discussed in [more detail here](https://github.com/Myndex/SAPC-APCA/discussions/39).
+Non-text contrast has long been a part of APCA. It is discussed in [more detail here](https://github.com/Myndex/SAPC-APCA/discussions/39) and in [this more recent post](https://github.com/Myndex/SAPC-APCA/discussions/117#discussioncomment-9244796).
 
 
 > ## _Thresholds_
@@ -717,7 +733,8 @@ Non-text contrast has long been a part of APCA. It is discussed in [more detail 
 > white and black (simultaneously) on a middle gray.\
 > -- <https://github.com/w3c/wcag/issues/695#issuecomment-484187617>
 
-I discuss some of the fallacies involved in the development of WCAG 2 [in this thread](https://github.com/w3c/wcag/issues/1705#issuecomment-1027058976).
+> [!NOTE]
+> I discuss some of the fallacies involved in the development of WCAG 2 contrast [**in this thread**](https://github.com/w3c/wcag/issues/1705#issuecomment-1027058976).
 
 > ### _APCA_
 
@@ -759,14 +776,16 @@ The ACTUAL contribution is perceptual uniformity, which is REQUIRED for the adva
 
 > _It is hard to evaluate APCA from a purely theoretical standpoint._
 
-It is trivial, the efficacy of perceptual uniformity is prima facia evidence.
+It is trivial to evaluate, the efficacy of perceptual uniformity is prima facia evidence, and a practical reality, not theoretical.
 
 > _Instead, thorough empirical validation is required. This has not yet started and will be
 a considerable effort. See \<harassment thread deleted\>._
 
-First, the entire basis for APCA is rooted in empirical data, and these claims are false, misleading, and notwithstanding.
+> [!IMPORTANT]
+> First, the entire basis for APCA is rooted in empirical data, and these claims are false, misleading, and notwithstanding. Here is a link to a listing of [peer review and third party evaluations of APCA](https://git.apcacontrast.com/documentation/independent-review).
 
-Second, xi's continued linking to threads that are trolling and personal harassment of myself implies his true motivations are other than claimed.
+> [!WARNING]
+> Second, xi's continued linking to certain threads that feature trolling and personal harassment of myself, implies his true motivations are other than claimed. At the very least, implies some connection to the small group of obstructionists to the process. This has not gone unnoticed.
 
 
 [Web Content Accessibility Guidelines]: https://www.w3.org/TR/WCAG21/
@@ -779,5 +798,5 @@ Second, xi's continued linking to threads that are trolling and personal harassm
 [1.4.4]: https://www.w3.org/TR/WCAG21/#resize-text
 [1.4.10]: https://www.w3.org/TR/WCAG21/#reflow
 [1.4.12]: https://www.w3.org/TR/WCAG21/#text-spacing
-[does attempt to model spatial frequency]: https://git.apcacontrast.com/WEBTOOLS/APCA/
+[does attempt to model spatial frequency]: https://git.apcacontrast.com/documentation/WhyAPCA
 [1.4.11]: https://www.w3.org/TR/WCAG21/#non-text-contrast
