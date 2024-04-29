@@ -3,7 +3,7 @@ User xi _(Tobias Bengfort)_ created an unauthorized repo called _"apca-introduct
 
 -----
 # The missing introduction to APCA
-- Note that the actual introduction is not missing, it is [***Why APCA***](https://git.apcacontrast.com/documentation/WhyAPCA).
+- Note that the actual introduction was not missing, it is [***Why APCA***](https://git.apcacontrast.com/documentation/WhyAPCA).
     - And new in 2023, there is a new plain language overview: ["Easy Intro to APCA"](https://git.apcacontrast.com/documentation/APCAeasyIntro)
 
 
@@ -11,7 +11,7 @@ User xi _(Tobias Bengfort)_ created an unauthorized repo called _"apca-introduct
 It is a supra-threshold visual contrast prediction model, that is specifically tuned to readability on self-illuminated displays. It follows human perception, including critical aspects such as spatial characteristics, meaning font weight and size or line thickness. The APCA guidelines also inform various use cases, such as body text, fluent text, sub-fluent text and spot reading text, and non-text items.
 
 ### *WCAG 2 compatibility?*
-APCA is enough of a paradigm shift that it is not directly backwards compatible with the old WCAG&nbsp;2 contrast, and WCAG&nbsp;3 is some time away from being the recommendation. However, this is not due as much to the APCA math per se, but that the APCA math is accurate to allow for flexible and accurate [design guidelines](https://readtech.org/ARC/).
+APCA is enough of a paradigm shift that it is not directly backwards compatible with the old WCAG&nbsp;2 contrast, and WCAG&nbsp;3 is some time away from being the recommendation. However, this is not due as much to the APCA math per se, but because the APCA math is accurate, it allows for more flexible and useful [design guidelines](https://readtech.org/ARC/).
 
 APCA thresholds can certainly be set to levels that are backwards compatible, but at a loss of design flexibility. This approach is used in the [Bridge-PCA](https://bridgepca.com), which is backward compatible to WCAG&nbsp;2, but using APCA technology. One of the urgent reasons Bridge-PCA is needed is the rise in popularity of *"Dark Mode."*
 
