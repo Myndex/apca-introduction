@@ -3,7 +3,7 @@ User xi _(Tobias Bengfort)_ created an unauthorized repo called _"apca-introduct
 
 The single most important failure of xi's repo and assertions, is that he completely fails to address the primary driver of contrast, which is the spatial characteristics. In fact, his demonstrations and calculations seem to intentionally obfuscate that fact, by using test elements that are spatially above the point of contrast constancy, which make any comparison moot. Those misleading demonstrations are also corrected here in this repo.
 
-The corrected ***"The missing introduction to APCA"*** below was revised for accuracy only, with the intention of maintaining xi's original tone and simplicity. In addition, this repo also addresses the other documents xi putforth.
+The corrected ***"The missing introduction to APCA"*** below was revised for accuracy only, with the intention of maintaining xi's original tone and simplicity. In addition, this repo also addresses the other documents xi put forth.
 
 -----
 # The missing introduction to APCA
