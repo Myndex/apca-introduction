@@ -1,8 +1,10 @@
 # Why This Repo
 
-This is a rebuttal and discussion of xi's [_"Why This Document"_](https://github.com/xi/apca-introduction?tab=readme-ov-file#why-this-document) in the last section of his original _"Missing Introduction to APCA"_. In the original, xi claimed he created the repo because:
+This is a rebuttal and discussion of xi's [_"Why This Document"_](https://github.com/xi/apca-introduction?tab=readme-ov-file#why-this-document) in the last section of his original _"Missing Introduction to APCA"_. 
 
 ## _Questionable Motivations_
+In the original, xi claimed he created the repo because:
+
 > _...it was born out of my personal frustration with the original documentation. Some important pieces of information (e.g. the actual algorithm) get buried under all that text..._
 
 **This argument is unpersuasive.**
@@ -14,7 +16,7 @@ This indicates that xi did not actually read nor look into the documentation fol
 Perhaps it's useful to add that a **chairperson of the W3C AGWG** had asked me to *"remove the math"* from the basic front page documentation to make it easier to read. In response, I put the math into its own separate file **clearly marked** at the top of the documentation folder.
 
 
-## _Twisting Rhetoric or Motive Unknown?_
+## _A Twist of Rhetoric?_
 > _The original documentation also contains absolute statements like "APCA is perceptually uniform" and that the old algorithm produces "invalid results"._
 
 ***This statement is verifiably false***.
@@ -24,7 +26,7 @@ Nowhere in the published documentation have I ever stated that *"WCAG&nbsp;2 pro
 Again, this points to motivation. 
 
 
-## _How Much Weight Should a Lay Opinion Muster?_
+## _Weighting a Lay Opinion_
 > ..._in my opinion is wrong as perceptual uniformity is an ideal that can never be reached completely. So I felt like there was room for a more balanced introduction._
 
 xi is, by his own admission, not knowledgable in the field of vision science. From his analysis document he states _(emphasis added)_:
