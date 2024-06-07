@@ -9,15 +9,17 @@ For the rebuttal to his recent blog post, please see [**Math Lies and Video**](h
 
 -----
 > ## _Detailed analysis of APCA (2022-07-16)_
-
+>
 > _I am a regular web developer with a bachelor's degree in math, but **without any
 training in the science around visual perception**. That's why I cannot evaluate
 whether APCA is *better* than WCAG 2.x. Instead this is a systematic
 comparison of their mathemetical properties._
 
+.
 > [!IMPORTANT]
 > In his analysis, xi admits to **no knowledge of the science of visual perception**. With this the case, I'd certainly prefer that xi not assert unsupported/uninformed opinions as if they were facts. I bring this point up, as it is clear he has basic misunderstandings regarding the field of visual perception. Despite his demonstrated lack of understanding, xi's analysis makes a number of unsupported assertions and leaps of logic that serve to mislead the reader. 
->
+.
+
 > ## _Context: The Web Content Accessibility Guidelines (WCAG)_
 >
 > _APCA was developed to address some issues related to contrast in the Web
@@ -62,14 +64,13 @@ Some of WCAG 2, such as that relating to the structure of the document needed fo
 
 > ## _Components of contrast_
 > _When we speak about contrast, we actually mean a few different things:_
-
-It is true that contrast means a few different things, but listed below are not those things. Listed below all relate to one _single_ kind of contrast.
-
 > -   _How is the contrast between two colors calculated?_
 > -   _Which thresholds are used to decide whether that contrast is sufficient?_
 > -   _How do other features like font size and font weight factor into that
     decision?_
 > -   _Which parts of the UI need to be checked?_
+
+It is true that contrast means a few different things, but listed above are not those things. Listed above all relate to one _single_ kind of contrast.
 
 While these are some the things that relate specifically to _readability contrast_. Some other important factors are:
 - Critical contrast for fluent readability
@@ -86,7 +87,7 @@ No, xi does not answer nor address these questions in the present analysis.
 
 
 > ## _The contrast formula_
-
+>
 > _There is no *true* contrast formula. Instead, these formulas are supposed to
 predict how most humans perceive a color combination, even if they cannot be
 correct 100% of the time._
@@ -95,19 +96,19 @@ This is a weird statement. Neither color or contrast are "real", they are percep
 
 
 > ### _A naive approach_
-
-```js
-function sRGBtoY(srgb) {
-  return (srgb[0] + srgb[1] + srgb[2]) / 3;
-}
-
-function contrast(fg, bg) {
-  var yfg = sRGBtoY(fg);
-  var ybg = sRGBtoY(bg);
-
-  return ybg - yfg;
-};
-```
+>
+> ```js
+> function sRGBtoY(srgb) {
+>  return (srgb[0] + srgb[1] + srgb[2]) / 3;
+> }
+>
+> function contrast(fg, bg) {
+>   var yfg = sRGBtoY(fg);
+>   var ybg = sRGBtoY(bg);
+>
+>   return ybg - yfg;
+> };
+> ```
 > _This naive approach provides a baseline for the other formulas we will look at.
 It does not consider anything we know about human vision, but it already
 features the basic structure: We first transform each color to a value that
@@ -121,32 +122,33 @@ I am not certain the motivation for presenting this approach here, and further, 
 
 
 > ### _WCAG 2.x_
+>
+> ```js
+> function gamma(x) {
+>   if (x < 0.04045) {
+>     return x / 12.92;
+>   } else {
+>     return Math.pow((x + 0.055) / 1.055, 2.4);
+>   }
+> }
+> 
+> function sRGBtoY(srgb) {
+>   var r = gamma(srgb[0] / 255);
+>   var g = gamma(srgb[1] / 255);
+>   var b = gamma(srgb[2] / 255);
+> 
+>   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+> }
+> 
+> function contrast(fg, bg) {
+>   var yfg = sRGBtoY(fg);
+>   var ybg = sRGBtoY(bg);
+> 
+>   var c = (ybg + 0.05) / (yfg + 0.05);
+>   return (c < 1) ? 1 / c : c;
+> };
+> ```
 
-```js
-function gamma(x) {
-  if (x < 0.04045) {
-    return x / 12.92;
-  } else {
-    return Math.pow((x + 0.055) / 1.055, 2.4);
-  }
-}
-
-function sRGBtoY(srgb) {
-  var r = gamma(srgb[0] / 255);
-  var g = gamma(srgb[1] / 255);
-  var b = gamma(srgb[2] / 255);
-
-  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-}
-
-function contrast(fg, bg) {
-  var yfg = sRGBtoY(fg);
-  var ybg = sRGBtoY(bg);
-
-  var c = (ybg + 0.05) / (yfg + 0.05);
-  return (c < 1) ? 1 / c : c;
-};
-```
 **_PARTIALLY INCORRECT_**
 This is the WCAG2 formula EXCEPT that WCAG2 does not care which is foreground or which is background, but it does demand which is lighter and which is darker. This is addressed obliquely in the return ternary statement. If this page intends to educate, then the importance of qualifying which color is higher luminance before calculating the ratio should be up front.
 
@@ -154,20 +156,19 @@ The function for WCAG 2 contrast() is more clearly written as:
 
 ```
 function contrast(fg, bg) {
-  var yfg = sRGBtoY(fg) + 0.05;
-  var ybg = sRGBtoY(bg) + 0.05;
+  let yfg = sRGBtoY(fg) + 0.05;
+  let ybg = sRGBtoY(bg) + 0.05;
   
            // divide the lightest by the darkest for the ratio
-  var c = (ybg > yfg) ? ybg/yfg : yfg/ybg;
-  return c;
+  return (ybg > yfg) ? ybg/yfg : yfg/ybg;
 };
 ```
-
 
 > _In WCAG 2.x we see the same general structure, but the individual steps are
 more complicated:_
 
-No, in WCAG 2 the return is a ratio, not a difference. The naive approach xi presented earlier used a difference.
+> [!TIP]
+> No, in WCAG 2 the return is a ratio, not a difference. The naive approach xi presented earlier used a difference.
 
 > _Colors on the web are defined in the [sRGB color space]. The first part of this
 formula is the official formula to convert a sRGB color to luminance. Luminance
@@ -227,50 +228,50 @@ Also, the original, which still exists in WCAG 2.0 is also not using the correct
 > ### 1.4.3 was not tested and not peer reviewed, not based on empirical evidence, and was even objected to by IBM back in 2007. It is still objected to, and should never be codified into law.
 
 > ### _APCA_
-
-```js
-function sRGBtoY(srgb) {
-  var r = Math.pow(srgb[0] / 255, 2.4);
-  var g = Math.pow(srgb[1] / 255, 2.4);
-  var b = Math.pow(srgb[2] / 255, 2.4);
-  var y = 0.2126729 * r + 0.7151522 * g + 0.0721750 * b;
-
-  if (y < 0.022) {
-    y += Math.pow(0.022 - y, 1.414);
-  }
-  return y;
-}
-
-function contrast(fg, bg) {
-  var yfg = sRGBtoY(fg);
-  var ybg = sRGBtoY(bg);
-  var c = 1.14;
-
-  if (ybg > yfg) {
-    c *= Math.pow(ybg, 0.56) - Math.pow(yfg, 0.57);
-  } else {
-    c *= Math.pow(ybg, 0.65) - Math.pow(yfg, 0.62);
-  }
-
-  if (Math.abs(c) < 0.1) {
-    return 0;
-  } else if (c > 0) {
-    c -= 0.027;
-  } else {
-    c += 0.027;
-  }
-
-  return c * 100;
-};
-```
-
+> 
+> ```js
+> function sRGBtoY(srgb) {
+>   var r = Math.pow(srgb[0] / 255, 2.4);
+>   var g = Math.pow(srgb[1] / 255, 2.4);
+>   var b = Math.pow(srgb[2] / 255, 2.4);
+>   var y = 0.2126729 * r + 0.7151522 * g + 0.0721750 * b;
+> 
+>   if (y < 0.022) {
+>     y += Math.pow(0.022 - y, 1.414);
+>   }
+>   return y;
+> }
+> 
+> function contrast(fg, bg) {
+>   var yfg = sRGBtoY(fg);
+>   var ybg = sRGBtoY(bg);
+>   var c = 1.14;
+> 
+>   if (ybg > yfg) {
+>     c *= Math.pow(ybg, 0.56) - Math.pow(yfg, 0.57);
+>   } else {
+>     c *= Math.pow(ybg, 0.65) - Math.pow(yfg, 0.62);
+>   }
+> 
+>   if (Math.abs(c) < 0.1) {
+>     return 0;
+>   } else if (c > 0) {
+>     c -= 0.027;
+>   } else {
+>     c += 0.027;
+>   }
+> 
+>   return c * 100;
+> };
+> ```
+>
 > _Again we can see the same structure: We first convert colors to lightness, then
 calculate the difference between them._
 
 > [!IMPORTANT]
 > ### Actually *NO*.
 
-First we convert to _"estimated screen luminance"_ a physical measure of light, but *not* lightness. And APCA's conversion to estimated screen luminance is a little different and includes additional pre-shaping and shifting of hue weighting.
+First we convert to _"estimated screen luminance"_ a physical measure of light, essentially luminance but *not* perceptual lightness. And APCA's conversion to estimated screen luminance is a little different and includes additional pre-shaping and shifting of hue weighting.
 
 Then we pre-shape low luminances with a soft clip at black which emulates flare components (in a way similar to DICOM). **_Only THEN_** are the inputs converted to _lightnesses_, and done so using independent exponents which are dependent on polarity, as the exponents define CONTEXT SENSITIVE PERCEPTUAL LIGHTNESS OF TEXT.
 
@@ -481,7 +482,10 @@ to the APCA curves. The second column shows the differences between the APCA
 curves and this modified WCAG 2.x. 0.4 was just a guess, there might be even
 better values._
 
-There is no justification for the adding of 0.4: it is not supported by any physical measure, it is not supported by any science. It is nothing more than a gross and incomplete reverse engineering in a vain attempt to match part of the APCA curves. It is irrelevant, and as used here is clearly an attempt to mislead. It absolutely should NOT be used in this area of analysis whatsoever. If it is to be explored, it needs be explored _SEPARATELY_ and not claimed to be WCAG2 because it is _NOT_. 
+> [!NOTE]
+> There is no justification for the adding of 0.4: it is not supported by any physical measure, it is not supported by any science. 
+
+The 0.4 is nothing more than a gross and incomplete reverse engineering in a vain attempt to match part of the APCA curves. It is irrelevant, and as used here is clearly an attempt to mislead. It absolutely should NOT be used in this area of analysis whatsoever. If it is to be explored, it needs be explored _SEPARATELY_ and not claimed to be WCAG2 because it is _NOT_. 
 
 This is a conflation of factors, not well described, and presented in a manner that serves only to confuse and obfuscate the facts. This more than anything renders this analysis biased and corrupt, and is eidence of a clear intent to create confusion.
 
@@ -757,7 +761,7 @@ Because invalid math is used, xi's faux analysis are archived. [A correct compar
 
 
 > ## _Conclusion_
-
+>
 > _In this analysis I took a deeper look at the Accessible Perceptual Contrast
 Algorithm (APCA), a new algorithm to predict visual contrast. I compared it to
 an existing algorithm that has been part of WCAG 2.x, the current standard for
