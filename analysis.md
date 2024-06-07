@@ -219,7 +219,7 @@ is added to both values to account for ambient light._
 
 Weber is nothing more than a log of the stimulus to a reference. While it is true that at the very beginning of the early research into perceptual contrast, APCA research lead _once_ referred to Weber as the "gold standard for contrast of text", but to clarify, that applied specifically and only to dark text on a light background, and at or near the _threshold_ JND. Weber becomes increasingly invalid as there is departure from those parameters. It should be mentioned that Weber is roughly 180 years old. In the 1960s, Stevens pointed out how Weber was flawed, and presented the power curve solution. More recently, Poynton pointed out that perception curves were more of a hybrid between log and power curves.
 
-This cherry picking of the APCA research lead's very early public research, notes, and comments to make this point is annoying to say the least, but I suppose that is a consequence of performing research out in the open. It is this kind of trolling that pushing researchers into private labs.
+This cherry picking of the APCA research lead's very early public research, notes, and comments to make this point is annoying to say the least, but I suppose that is a consequence of performing research out in the open. It is this kind of trolling that's pushing researchers into private labs.
 
 > [!TIP]
 > Where Weber has some utility in terms of research for the purposes of certain comparisons, It is not useful for design guidance in today's world of graphically rich web content, especially with the need for dynamic changes.
@@ -306,7 +306,7 @@ So, this is a multi-stage process, first colors to physical light measure (lumin
 > _However, in order to be able to compare
 APCA to WCAG 2.x, I will make some modifications:_
 
-> [!NOTE]
+> [!CAUTION]
 > ### The modifications made are not approved, and are a violation of the APCA license.
 
 .
@@ -334,7 +334,7 @@ The output clamp *or* one of the low-end extensions is required, especially if y
     monotonous, it does not change the results other than moving the
     thresholds._
 
-xi is not adjusting thresholds for an apples to apples comparisons, and this is part of the most significant flaw in the approach.
+xi is not adjusting thresholds in a way the presents an apples to apples comparison, and this is part of the most significant flaw in the approach.
 
 But also, the claim that it is monotonic is wrong. Lc 45 through Lc 90 moves in increments of 15. But using Math.exp() this changes with every level. And this is not even adding in the other corruption that xi introduced with the other unapproved changes made. This removes the perceptual uniformity and this does not provide a valid comparison to WCAG2, and the purpose here is not at all clear.
 
@@ -459,7 +459,7 @@ very different. The author of APCA provides some motivation for these changes
 in the article [Regarding APCA Exponents]. The main argument seems to be that
 this more closely models real-world computer screens._
 
-The real difference is a shift in the linearization exponent from the "effective 2.2" of WCAG2 to 2.4, and the combining of the flare/black adjustment into the soft-clamp in a manner that is similar to DICOM.
+The real difference is a small shift in the linearization exponent from the "effective 2.2" of WCAG2 to 2.4, and the combining of the flare/black adjustment into the soft-clamp in a manner that is similar to DICOM.
 
 .
 
@@ -561,7 +561,8 @@ higher contrast (difference is in the same direction as contrast polarity). For
 dark colors, APCA predicts a lower contrast (difference is inverse to contrast
 polarity)._
 
-Again, these scatter plots serve only to confuse, and not to illuminate, They are meaningless in what they are presenting. What are they supposed to mean? They are not well described.
+Again, these scatter plots serve only to confuse, and not to illuminate. They are meaningless in what they are presenting. What are they supposed to mean? They are not well described. In the 1980s, there was an infamous saying "if you can't dazzle them with brilliance, baffle them with BS". What is going on here is not brilliance but something else.
+
 
 ### A mathematically accurate comparison of WCAG 2 and APCA [can be seen here](https://github.com/Myndex/SAPC-APCA/discussions/30#discussioncomment-1904967).
 
@@ -790,7 +791,7 @@ It is also not always clear which parts of the UI are decorative and which are
 actually relevant._
 
 > [!NOTE]
-> And 1.4.11 is one of the most incorrect SCs of WCAG 2, and is citing self-referential and unsupportable documentation, and importantly, fully disregarding spatial frequency in an SC where spatial frequency shoudl be of key importance.
+> And 1.4.11 is one of the most incorrect SCs of WCAG 2, and is citing self-referential and unsupportable documentation. Importantly, it fully disregards spatial characteristics in an SC where spatial frequency should be of key importance.
 
 
 .
@@ -869,10 +870,10 @@ Again, a not well developed comparison.
 > _Though still in early development, APCA already makes two major contributions:_
 > - _a different color contrast formula that assume much more ambient light_
 
-*FALSE*. And these spurious statements are what makes this frustrating. Ambient light is not the operant difference by any stretch of the imagination. Such statements underline the lack of understanding of the subject matter. The ACTUAL contribution is perceptual uniformity, which is REQUIRED for the advancement of automated color technologies.
+*FALSE*. And these spurious statements are what makes this issue frustrating. Ambient light is not the operant difference by any stretch of the imagination. Such statements underline the lack of understanding of the subject matter. The ACTUAL contribution is perceptual uniformity, which is REQUIRED for the advancement of automated color technologies.
 
 > - _a more sophisticated link between spatial frequency and minimum color
-    contrast that allows for more nuanced thresholds_
+>    contrast that allows for more nuanced thresholds_
 >
 > _It is hard to evaluate APCA from a purely theoretical standpoint._
 
