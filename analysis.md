@@ -36,6 +36,8 @@ The Domino's case regarded if they had to abide by ADA, not WCAG.
 
 As far as "generally a good read"—WCAG 2 is considered dense, arcane, and confusing by most who are required to use it.
 
+.
+
 > _WCAG faces a difficult challenge though: There is no one-size-fits-all solution
 for accessibility. Different humans have different needs, and different
 situations require different kinds of support._
@@ -54,6 +56,8 @@ provided by WCAG need to work regardless of these factors._
 WCAG 2 contrast SCs and understanding docs make dismissive or "hand wavy" statements regarding important factors—for instance, stating that antialiasing can not be considered, which is bizarre when that technology has been an important part of rasterizing for displays for decades.
 
 
+.
+
 > _Faced with the question whether it wanted to give precise instructions (that
 might not be ideal in every situation) or give nuanced but ultimately vague
 advise, WCAG went with the former. So today WCAG provides a list of detailed
@@ -61,7 +65,7 @@ steps for evaluating a website. Many of these checks can be automated. It does
 not always result in perfect accessibility, but it gives lawmakers a solid
 baseline._
 
-**Opinion not based in fact.**
+### _Opinion not based in fact._
 
 Some of WCAG 2, such as that relating to the structure of the document needed for accessibility (i.e. needed for screen reader support) is certainly important. But some of WCAG 2 that relate to perception, such as contrast, are not based in science, not empirically tested nor evaluated, were in fact objected to at the time (objections ignored), and otherwise unsupportable as law, and I am unaware of any cases judged on the merits in the US, at least not at the Federal level. In discussing this with legal council, I was informed that the NY and CA cases were relating to actual accessibility, not automated testing, though this is something I've been looking into.
 
@@ -127,6 +131,8 @@ values._
 No. This naive approach is fundamentally wrong, so it does not provide any sort of baseline. More importantly, it does _NOT_ calculate "lightness" which is a perceptual quality, and the claim that it represents lightness, a perceptual sensation (subject to context) as opposed to _light_ or _luminance_ (a physical measure) further underlines xi's lack of understanding of the science here.
 
 I am not certain the motivation for presenting this approach here, and further, if a naive approach were to be included for a baseline, then the most simple, such as "simple contrast", should be used. Otherwise it only serves to confuse the reader and obscure the point.
+
+To be clear, we formerly provided xi with a resource list in good faith, including suthoritative books which could help inform his thought here. But based on interactions, it does not appear informed on the subject. For those that have spent a lifetime working with color and light and vision, such a ham-fisted pedestrian discussion, stating falsehoods with a tone of authority, is quite infuriating by itself. That he is applying this shade to work that has been in development, and smearing the meaning is beyond the pale.
 
 .
 
@@ -881,7 +887,7 @@ a considerable effort. See \<Cluster B thread deleted\>._
 > First, the entire basis for APCA is rooted in empirical data, and these claims are false, misleading, and notwithstanding. Here is a link to a listing of [peer review and third party evaluations of APCA](https://git.apcacontrast.com/documentation/independent-review).
 
 > [!WARNING]
-> Second, xi's continued linking to certain threads that feature trolling and personal harassment of myself, implies his true motivations are other than claimed. At the very least, implies some connection to the small group of obstructionists to the process. This has not gone unnoticed.
+> Second, xi's continued linking to certain threads that feature trolling and personal harassment of the author of this rebuttal, implies his true motivations are other than claimed. At the very least, has implied by association some connection to the small group of obstructionists to the process. This has not gone unnoticed.
 
 
 [Web Content Accessibility Guidelines]: https://www.w3.org/TR/WCAG21/
