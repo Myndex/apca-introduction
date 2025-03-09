@@ -45,8 +45,8 @@ His claims for why he created the parent repo fall flat, as his view implies he 
 
 What is abundantly clear with mounting evidence, is his repo and his Silver issue #651 had the intent and effect of obstructing the work being done in the Visual Contrast group for improving readability. I am well aware of the small group that has been harrassing myself personally, and have been obstructive. Their ultimate motivation is somewhat unclear, perhaps "politics as usual", and I suppose that is to be expected anytime there is a paradigm shift such as the one that the APC Readability Criterion presents.
 
-##W TL;DR
-The most important deficit of xi's assertions is the failure to recognize [spatial characteristics](https://github.com/Myndex/SAPC-APCA/discussions/90) as the primary driver of contrast for text. It appears his demonstrations and calculations are **biased to obfuscate that fact**, using test elements spatially above the point of contrast constancy, and not using the actual APCA code nor methods. These issues were corrected here. The other documents in the repo have also been revised or commented on, including his "analysis".
+## TL;DR
+The most important deficit of xi's assertions is the **failure to recognize [spatial characteristics](https://github.com/Myndex/SAPC-APCA/discussions/90) as the primary driver of contrast** for text. It appears his demonstrations and calculations are **biased to obfuscate that fact**, using test elements spatially above the point of contrast constancy, and not using the actual APCA code nor methods. These issues were corrected here. The other documents in the repo have also been revised or commented on, including his "analysis".
 
 ------
 
