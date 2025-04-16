@@ -1,14 +1,14 @@
 import * as wcag from '../wcag2.js';
 import * as apca from '../apca.js';
 
-const LEVEL_LABELS = ['REJECT', 'LARGE', 'AA', 'AAA', 'AAA'];
-const FONT_SIZE = ['32px', '24px', '18px', '16px', '14px'];
+const LEVEL_LABELS = ['REJECT', 'AA (Lrg)', 'AA', 'AAA', 'AAA'];
+const FONT_SIZE = ['32px', '24px', '18px', '16px', '12px'];
 const PADDING = ['0.1em 0.25em', '0.33em', '0.8em', '1em', '1.1em'];
 const APCA_LABELS = [
-		['REJECT','NONSEM','NONTXT','SPOT-B','SUBFL1','FLUENT','FLUENT','FLBDTX','BODYTX','BODYTX','BODYTX'],
-		['REJECT','TOO-SML','TOO-THN','SPOT-A','SUBFL1','FLUENT','FLUENT','FLBDTX','BODYTX','BODYTX','BODYTX'],
-		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','FLUENT','FLUENT','FLBDTX','BODYTX','BODYTX','BODYTX'],
-		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','SUBFL2','FLUENT','FLBDTX','BODYTX','BODYTX','BODYTX'],
+		['REJECT','NO TXT','NO TXT','SPOT-B','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
+		['REJECT','TOO-SML','TOO-TN','SPOT-A','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
+		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
+		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','SUBFL2','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
 		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','SUBFL2','FLUENT','FLUENT','FLBDTX','BODYTX','BODYTX'],
 	];
 
@@ -35,7 +35,7 @@ const COLORS = [
 	['#ca9641', '#1246ab', '#ba6521'],
 	['#153856', '#abcfed', '#897c69'],
 	['#9322ad', '#fedcba', '#123456'],
-	['#11bbff', '#220044', '#440022'],
+	['#11bbff', '#4400aa', '#aa0044'],
 ];
 
 var parseColor = function(c) {
