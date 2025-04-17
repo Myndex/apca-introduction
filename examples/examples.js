@@ -2,14 +2,14 @@ import * as wcag from '../wcag2.js';
 import * as apca from '../apca.js';
 
 const LEVEL_LABELS = ['REJECT', 'AA L', 'AA', 'AAA', 'AAA'];
-const FONT_SIZE = ['32px', '24px', '18px', '16px', '12px'];
+const FONT_SIZE = ['32px', '24px', '18.7px', '16px', '12px'];
 const PADDING = ['0.1em 0.25em', '0.33em', '0.8em', '1em', '1.1em'];
-const APCA_LABELS = [
-		['REJECT','NO TXT','NO TXT','SPOT-B','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
-		['REJECT','TOO-SML','TOO-TN','SPOT-A','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
-		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
-		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','SUBFL2','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
-		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','SUBFL2','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX'],
+const APCA_LABELS = [ //[0, 15,     22,      30,     37.5,     45,     52.5,    60,      67.5,    75,     82.5,     90,  110];
+		['REJECT','NO TXT','NO TXT','SPOT-B','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'], // 32px
+		['REJECT','NO TXT','NO TXT','SPOT-A','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'], // 24px
+		['REJECT','NO TXT','NO TXT','SPOT-B','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'], // 18.7px
+		['REJECT','NO TXT','NO TXT','SPOT-B','SUBFL1','SUBFL2','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'], // 16px
+		['REJECT','NO TXT','NO TXT','SPOT-B','SUBFL1','SUBFL2','FLUENT','FLUENT','FLUENT','FLUENT','FLUENT'], // 12px
 	];
 
 // [0,15,22,30,37.5,45,52.5,60,67.5,75,82.5,90,110];
@@ -19,9 +19,24 @@ const APCA_OFFSET = [0,1,2,3,4];
 
 
 // APCA = [0,15,30, 37.5, 45, 52.5, 60, 67.5, 75, 82.5, 90, 110];
-// '32px', '24px', '16px', '14px'
+// '32px', '24px', '18.7px', '16px', '14px' 
 
 const COLORS = [
+	['#111111', '#000000', '#ffffff'],
+	['#222222', '#000000', '#ffffff'],
+	['#333333', '#000000', '#ffffff'],
+	['#444444', '#000000', '#ffffff'],
+	['#555555', '#000000', '#ffffff'],
+	['#666666', '#000000', '#ffffff'],
+	['#777777', '#000000', '#ffffff'],
+	['#888888', '#000000', '#ffffff'],
+	['#999999', '#000000', '#ffffff'],
+	['#aaaaaa', '#000000', '#ffffff'],
+	['#bbbbbb', '#000000', '#ffffff'],
+	['#cccccc', '#000000', '#ffffff'],
+	['#dddddd', '#000000', '#ffffff'],
+	['#eeeeee', '#000000', '#ffffff'],
+
 	['#9999ff', '#000000', '#ffffff'],
 	['#00bf00', '#000000', '#ffffff'],
 	['#ff7373', '#000000', '#ffffff'],
