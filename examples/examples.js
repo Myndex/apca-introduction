@@ -41,6 +41,7 @@ const COLORS = [
 	['#153856', '#abcfed', '#897d69'],
 	['#9322ad', '#fedcba', '#123456'],
 	['#11bbff', '#4400aa', '#aa0044'],
+	['#150656', '#789abc', '#896669'],
 ];
 
 var parseColor = function(c) {
