@@ -5,11 +5,11 @@ const LEVEL_LABELS = ['REJECT', 'AA L', 'AA', 'AAA', 'AAA'];
 const FONT_SIZE = ['32px', '24px', '18.7px', '16px', '12px'];
 const PADDING = ['0.1em 0.25em', '0.33em', '0.8em', '1em', '1.1em'];
 const APCA_LABELS = [ //[0, 15,     22,      30,     37.5,     45,     52.5,    60,      67.5,    75,     82.5,     90,  110];
-		['REJECT','NO-TXT','NO-TXT','SPOT-B','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','TOO-HI'], // 32px
-		['REJECT','NO-TXT','NO-TXT','SPOT-A','SPOT-B','SUBFL1','FLUENT','BODYMN','BODYMN','BODYTX','BODYTX'], // 24px
-		['REJECT','NO-TXT','NO-TXT','SPOT-A','SPOT-B','SUBFL1','FLUENT','FLUENT','FLUENT','BODYMN','BODYTX'], // 18.7px
-		['REJECT','REJECT','REJECT','SPOT-A','SPOT-B','SUBFL2','SUBFL2','FLUENT','FLUENT','BODYMN','BODYTX'], // 16px
-		['REJECT','REJECT','REJECT','NO TXT','NO TXT','SUBFL2','SUBFL2','SUBFL2','SUBFL2','SUBFL2','SUBFL2'], // 12px
+		['REJECT','NO-TXT','NO-TXT','SPOT-B','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','TOO-HI','TOO-HI'], // 32px
+		['REJECT','NO-TXT','NO-TXT','SPOT-A','SPOT-B','SUBFL1','FLUENT','BODYMN','BODYMN','BODYTX','BODYTX','TOO-HI'], // 24px
+		['REJECT','NO-TXT','NO-TXT','SPOT-A','SPOT-B','SUBFL1','FLUENT','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX'], // 18.7px
+		['REJECT','REJECT','REJECT','SPOT-A','SPOT-B','SUBFL2','SUBFL2','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX'], // 16px
+		['REJECT','REJECT','REJECT','NO TXT','NO TXT','SUBFL2','SUBFL2','SUBFL2','SUBFL2','SUBFL2','SUBFL2','SUBFL2'], // 12px
 	];
 
 // [0,15,22,30,37.5,45,52.5,60,67.5,75,82.5,90,110];
@@ -22,19 +22,11 @@ const APCA_OFFSET = [0,1,2,3,4];
 // '32px', '24px', '18.7px', '16px', '14px' 
 
 const COLORS = [
-	['#111111', '#000000', '#ffffff'],
-	['#222222', '#000000', '#ffffff'],
-	['#333333', '#000000', '#ffffff'],
 	['#444444', '#000000', '#ffffff'],
-	['#555555', '#000000', '#ffffff'],
 	['#666666', '#000000', '#ffffff'],
-	['#777777', '#000000', '#ffffff'],
 	['#888888', '#000000', '#ffffff'],
-	['#999999', '#000000', '#ffffff'],
 	['#aaaaaa', '#000000', '#ffffff'],
-	['#bbbbbb', '#000000', '#ffffff'],
 	['#cccccc', '#000000', '#ffffff'],
-	['#dddddd', '#000000', '#ffffff'],
 	['#9999ff', '#000000', '#ffffff'],
 	['#00bf00', '#000000', '#ffffff'],
 	['#ff7373', '#000000', '#ffffff'],
