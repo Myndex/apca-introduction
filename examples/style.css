@@ -58,25 +58,25 @@ div hr {
 	vertical-align: 0.1em;
 	padding: 0 0.6em;
 }
-.badge-0,.badge-REJECT,.badge-NO-TXT {
+.badge-0,.badge-REJECT {
 	background-color: #c00;
 	color: #ffa;
 }
-.badge-TOO-HI {
+.badge-TOO-HI,.badge-NO-TXT {
 	background-color: #800;
 	color: #ff8;
 }
-.badge-SPOT-A,.badge-SPOT-B {
+.badge-SPOT-A,.badge-SPOT {
 	background-color: hsl(60, 100%, 45%);
 	color: #b00;
 }
-.badge-NONTXT,.badge-SPOT-C {
+.badge-NONTXT,.badge-SPOT-B {
 	background-color: hsl(60, 100%, 45%);
 	color: #800;
 }
-.badge-SUBFL1 {
-	background-color: #570;
-	color: #ffa;
+.badge-SUBFLT {
+	background-color: #750;
+	color: #fda;
 }
 .badge-LARGE,.badge-SUBFL2 {
 	background-color: #480;
@@ -84,7 +84,7 @@ div hr {
 }
 .badge-AAA,.badge-AA,.badge-AA-L,.badge-FLUENT{
 	background-color: #0a0;
-	color: #efe;
+	color: #efc;
 }
 .badge-4,.badge-BODYTX,.badge-BODYMN{
 	background-color: #080;
