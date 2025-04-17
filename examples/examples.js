@@ -84,7 +84,7 @@ var addExample = function(fg, bg) {
 	display.style.fontWeight = font_weight;
 	display.style.padding = PADDING[wcag_level];
 
-	clone.querySelector('.wcag output').textContent = wcag.abs(wcag_contrast).toFixed(1);
+	clone.querySelector('.wcag output').textContent = wcag_contrast.toFixed(1);
 	clone.querySelector('.wcag .badge').textContent = LEVEL_LABELS[wcag_level];
 	clone.querySelector('.wcag .badge').classList.add(`badge-${LEVEL_LABELS[wcag_level]}`);
 
