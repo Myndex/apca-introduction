@@ -76,15 +76,16 @@ var addExample = function(fg, bg) {
 	var font_weight = wcag_level == 0 ? 'bold' : 'normal';
 	// var textEnd = wcag_level == 0 ? '' : ' BG';
 
+	var colorValues = clone.querySelector('.colorValues');
 	var display = clone.querySelector('.display');
 	var display2 = clone.querySelector('.display2');
 	display.textContent = font_size + ` ${fg}`;
 	display2.textContent = `on ${bg} BG`;
-	display.style.color = fg;
-	display.style.backgroundColor = bg;
-	display.style.fontSize = font_size;
-	display.style.fontWeight = font_weight;
-	display.style.padding = PADDING[wcag_level];
+	colorValues.style.color = fg;
+	colorValues.style.backgroundColor = bg;
+	colorValues.style.fontSize = font_size;
+	colorValues.style.fontWeight = font_weight;
+	colorValues.style.padding = PADDING[wcag_level];
 
 	// edited to add trunc, due to AGWG disregarding standard maths
 	// xi's version using toFixed(1) is not correct per WCAG 2
