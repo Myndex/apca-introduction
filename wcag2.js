@@ -14,13 +14,16 @@ export var contrast = function(fg, bg) {
   // `c >= 1 ? c : 1 / c` gives you the actual value.
   // See also `getAbsRange()`.
 
+  // replaced with standard WCAG2 due to rounding errors  with xi's version
+  
   var yfg = sRGBtoY(fg);
   var ybg = sRGBtoY(bg);
-  return (ybg + 0.05) / (yfg + 0.05);
+  
+  return yfg>ybg? (yfg + 0.05) / (ybg + 0.05):(ybg + 0.05) / (yfg + 0.05);
 };
 
 export var abs = function(c) {
-  return c < 1 ? 1 / c : c;
+  return c;
 };
 
 export var getAbsRange = function(range) {
