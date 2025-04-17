@@ -58,7 +58,7 @@ div hr {
 	vertical-align: 0.1em;
 	padding: 0 0.6em;
 }
-.badge-0,.badge-REJECT {
+.badge-REJECT {
 	background-color: #c00;
 	color: #ffa;
 }
@@ -66,11 +66,11 @@ div hr {
 	background-color: #800;
 	color: #ff8;
 }
-.badge-SPOT-A,.badge-SPOT {
+.badge-SPOT {
 	background-color: hsl(60, 100%, 45%);
 	color: #b00;
 }
-.badge-NONTXT,.badge-SPOT-B {
+.badge-NONTXT {
 	background-color: hsl(60, 100%, 45%);
 	color: #800;
 }
@@ -78,7 +78,7 @@ div hr {
 	background-color: #750;
 	color: #fda;
 }
-.badge-LARGE,.badge-SUBFL2 {
+.badge-LARGE {
 	background-color: #480;
 	color: #ffa;
 }
@@ -86,7 +86,7 @@ div hr {
 	background-color: #0a0;
 	color: #efc;
 }
-.badge-4,.badge-BODYTX,.badge-BODYMN{
+.badge-BODYTX,.badge-BODYMN{
 	background-color: #080;
 	color: #fff;
 }
