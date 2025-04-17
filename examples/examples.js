@@ -1,7 +1,7 @@
 import * as wcag from '../wcag2.js';
 import * as apca from '../apca.js';
 
-const LEVEL_LABELS = ['REJECT', 'AA (Lrg)', 'AA', 'AAA', 'AAA'];
+const LEVEL_LABELS = ['REJECT', 'AA L', 'AA', 'AAA', 'AAA'];
 const FONT_SIZE = ['32px', '24px', '18px', '16px', '12px'];
 const PADDING = ['0.1em 0.25em', '0.33em', '0.8em', '1em', '1.1em'];
 const APCA_LABELS = [
@@ -9,7 +9,7 @@ const APCA_LABELS = [
 		['REJECT','TOO-SML','TOO-TN','SPOT-A','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
 		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
 		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','SUBFL2','FLUENT','BODYMN','BODYTX','BODYTX','BODYTX'],
-		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','SUBFL2','FLUENT','FLUENT','FLBDTX','BODYTX','BODYTX'],
+		['REJECT','TOO-SML','SPOT-A','SPOT-B','SUBFL1','SUBFL2','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX'],
 	];
 
 // [0,15,22,30,37.5,45,52.5,60,67.5,75,82.5,90,110];
