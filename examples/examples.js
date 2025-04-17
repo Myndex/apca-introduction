@@ -77,7 +77,9 @@ var addExample = function(fg, bg) {
 	// var textEnd = wcag_level == 0 ? '' : ' BG';
 
 	var display = clone.querySelector('.display');
-	display.textContent = font_size + ` ${fg}<br>on ${bg} BG`;
+	var display2 = clone.querySelector('.display2');
+	display.textContent = font_size + ` ${fg}`;
+	display2.textContent = `on ${bg} BG`;
 	display.style.color = fg;
 	display.style.backgroundColor = bg;
 	display.style.fontSize = font_size;
