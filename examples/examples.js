@@ -52,7 +52,7 @@ var parseColor = function(c) {
 };
 
 var getLevel = function(c, module) {
-	var a = module.abs(c);
+	var a = Math.abs(c);
 	for (let i = 0; i < module.arraySize; i++) {
 		if (a < module.levels[i + 1]) {
 			return i;
@@ -84,7 +84,8 @@ var addExample = function(fg, bg) {
 	display.style.fontWeight = font_weight;
 	display.style.padding = PADDING[wcag_level];
 
-	clone.querySelector('.wcag output').textContent = wcag_contrast.toFixed(1);
+	// trunc is due to AGWG disregarding standard maths
+	clone.querySelector('.wcag output').textContent = Math.trunc(wcag_contrast * 10) / 10;
 	clone.querySelector('.wcag .badge').textContent = LEVEL_LABELS[wcag_level];
 	clone.querySelector('.wcag .badge').classList.add(`badge-${LEVEL_LABELS[wcag_level]}`);
 
