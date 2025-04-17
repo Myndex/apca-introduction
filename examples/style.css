@@ -58,11 +58,11 @@ div hr {
 	vertical-align: 0.1em;
 	padding: 0 0.6em;
 }
-.badge-0,.badge-REJECT,.badge-TOO-SML,.badge-TOO-THN {
+.badge-0,.badge-REJECT,.badge-NO-TXT {
 	background-color: #c00;
 	color: #ffa;
 }
-.badge-NONSEM {
+.badge-TOO-HI {
 	background-color: #800;
 	color: #ff8;
 }
@@ -86,7 +86,7 @@ div hr {
 	background-color: #0a0;
 	color: #efe;
 }
-.badge-4,.badge-BODYTX,.badge-FLBDTX{
+.badge-4,.badge-BODYTX,.badge-BODYMN{
 	background-color: #080;
 	color: #fff;
 }
