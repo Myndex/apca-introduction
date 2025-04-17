@@ -22,20 +22,20 @@ const APCA_OFFSET = [0,1,2,3,4];
 // '32px', '24px', '18.7px', '16px', '14px' 
 
 const COLORS = [
-	['#444444', '#000000', '#ffffff'],
-	['#666666', '#000000', '#ffffff'],
-	['#888888', '#000000', '#ffffff'],
-	['#aaaaaa', '#000000', '#ffffff'],
-	['#cccccc', '#000000', '#ffffff'],
-	['#9999ff', '#000000', '#ffffff'],
-	['#00bf00', '#000000', '#ffffff'],
-	['#ff7373', '#000000', '#ffffff'],
-	['#3333ff', '#000000', '#ffffff'],
-	['#40631f', '#000000', '#ffffff'],
-	['#B80000', '#000000', '#ffffff'],
-	['#0f6bff', '#000000', '#ffffff'],
-	['#008a00', '#000000', '#ffffff'],
-	['#e62200', '#000000', '#ffffff'],
+	['#444444', '#000000', '#fefefe'],
+	['#666666', '#000000', '#fefefe'],
+	['#888888', '#000000', '#fefefe'],
+	['#aaaaaa', '#000000', '#fefefe'],
+	['#cccccc', '#000000', '#fefefe'],
+	['#9999ff', '#000000', '#fefefe'],
+	['#00bf00', '#000000', '#fefefe'],
+	['#ff7373', '#000000', '#fefefe'],
+	['#3333ff', '#000000', '#fefefe'],
+	['#40631f', '#000000', '#fefefe'],
+	['#B80000', '#000000', '#fefefe'],
+	['#0f6bff', '#000000', '#fefefe'],
+	['#008a00', '#000000', '#fefefe'],
+	['#e62200', '#000000', '#fefefe'],
 	['#11bbff', '#220044', '#440022'],
 	['#ca9641', '#1246ab', '#ba6521'],
 	['#153856', '#abcfed', '#897c69'],
@@ -74,17 +74,18 @@ var addExample = function(fg, bg) {
 	var font_size = FONT_SIZE[wcag_level];
 	var offset = APCA_OFFSET[wcag_level];
 	var font_weight = wcag_level == 0 ? 'bold' : 'normal';
-	var textEnd = wcag_level == 0 ? '' : ' BG';
+	// var textEnd = wcag_level == 0 ? '' : ' BG';
 
 	var display = clone.querySelector('.display');
-	display.textContent = font_size + ` ${fg} on ${bg}`;
+	display.textContent = font_size + ` ${fg}<br>on ${bg} BG`;
 	display.style.color = fg;
 	display.style.backgroundColor = bg;
 	display.style.fontSize = font_size;
 	display.style.fontWeight = font_weight;
 	display.style.padding = PADDING[wcag_level];
 
-	// trunc is due to AGWG disregarding standard maths
+	// edited to add trunc, due to AGWG disregarding standard maths
+	// xi's version using toFixed(1) is not correct per WCAG 2
 	clone.querySelector('.wcag output').textContent = Math.trunc(wcag_contrast * 10) / 10;
 	clone.querySelector('.wcag .badge').textContent = LEVEL_LABELS[wcag_level];
 	clone.querySelector('.wcag .badge').classList.add(`badge-${LEVEL_LABELS[wcag_level]}`);
