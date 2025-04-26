@@ -1,19 +1,19 @@
-# Math Lies and Videotape 
+# Math, Lies, and Videoscreens
 _**How To Use Math To Lie:** the Debunking of a would-be debunker_
 
-GitHub user xi (aka Tobias Bengfort) wrote a blog post entitled _"Debunking claims about contrast formulas"_. In it he has taken a bizzare position and is twisting math around in an attempt to disregard the last hundred years of vision and color science. Unfortunately the presentation of his uninformed opinion can only create further misunderstandings and I feel that it's already complicated and difficult to understand in the first place. Perhaps that's central to the problem here.
+GitHub user xi (aka Tobias Bengfort) wrote a blog post entitled _"Debunking claims about contrast formulas"_. In it he has taken a bizzare position and is twisting math around in an attempt to disregard the last century of vision and color science. Unfortunately the presentation of his uninformed opinion can only create further misunderstandings in a field that is already complicated and difficult to understand in the first place. Perhaps that's central to the problem here.
 
 **_Tobias is uninformed regarding vision science_**
-It should be noted that by [Tobias's own admission](https://github.com/Myndex/apca-introduction/blob/main/analysis.md#detailed-analysis-of-apca-2022-07-16), he has no knoweldge in the field of visual perception. And despite good faith attempts to educate him on the state of the art, he seems content to ignore the current scientific consensus, and then make unsupported statements using abstracted math that results in meaningless conclusions which he nevertheless asserts as fact.
+It should be noted that by [Tobias's own admission](https://github.com/Myndex/apca-introduction/blob/main/analysis.md#detailed-analysis-of-apca-2022-07-16), he has no knoweldge in the field of visual perception. And despite good faith attempts to educate him on the state of the art, he seems content to ignore the current scientific consensus, and then make unsupported statements using abstracted math that results in meaningless conclusions, which he nevertheless asserts as fact.
 
-My concern is that he has extended his disinformation into posts in W3C GitHub groups, "baffling with BS" and obfuscating with seemingly complicated but nevertheless incorrect math, that the uninitiated may be tempted to accept without further analysis.
+My concern is that he has extended his disinformation into posts in W3C GitHub groups, "baffling with Bull$#!%" and obfuscating with seemingly complicated but nevertheless incorrect math, that the uninitiated may be tempted to accept without further analysis or critical thinking.
 
 
 ## 1) Generalized comments: 
 
 What is @xi is up to?? Some of what he brings up we covered over three years ago in the initial evaluations of existing contrast metrics, some of which were discussed in WCAG thread #695, and some were discussed elsewhere, as part of the visual contrast subcommittee, which was and is working toward finding useful solutions for perceptual uniform contrast metrics.
 
-It is important to point out that xi is, by his own admission, not familiar with vision or color science. The main exception I have is his insistence on "simplifying" math by discarding perceptual uniformity, which he does liberally at his repo, in his blog post, and a few other places. I certainly don't have a problem with somebody who is focus on mathematics for being involved here, but rather than asking questions, xi ignores important aspects of vision science and then makes claims that only the math matters.
+It is important to point out that xi is, by his own admission, not familiar with vision or color science. The main exception I have is his insistence on "simplifying" math by discarding perceptual uniformity. He does this liberally at his repo, in his blog post, and a few other places. I certainly don't have a problem with somebody who is focused on mathematics being involved here—but rather than asking questions, xi makes assertions that ignore critical aspects of vision science, and then makes claims that _"only the math matters"_, a spurious statement at best.
 
 Honestly this is an untenable position. Vision science is not about the math, it is about empirical evidence. That evidence has been collected for decades. For over a century. The depth of research an investigation into human vision is substantial, yet xi references nearly none of it, seeming content to rely only on the very early 180-year-old Weber-Fechner laws. Weber-Fechner is generally regarded as not a perceptual uniform model for human vision, and while still used in research as a way to quantify the just noticeable differences (JND) between visible and invisible, it is nevertheless limited and not uniform nor was it intended for that purpose.
 
@@ -65,7 +65,7 @@ The graph of different curves he presents is not really meaningful, as nowhere d
 
 
 ### APCA
-APCA traces partly back to Stevens, though also Fairchild's R-Lab, and many others. APCA then adds several needed practical additions for modeling self-illuminated displays, including flare and black point compensation and polarity sensitivity, and is especially concerned with high spatial frequency stimuli (text).
+APCA traces partly back to Stevens, though also Fairchild's R-Lab, CIECAM02, and many others. APCA then adds several needed practical additions for modeling self-illuminated displays, including flare and black point compensation and polarity sensitivity, and is especially concerned with high spatial frequency stimuli (text).
 
 xi is not examining any empirical data at all, only the abstraction of the math. This despite the fact there is a wealth of available data sets for training models.
 
@@ -78,7 +78,7 @@ Associated with this is the recent shift in the WCAG 3 conformance model, and qu
 ### What xi is not doing
 xi is attempting to reverse engineer the APCA Lc curves, but what xi is not doing is any empirical study or research to provide the basis for the curves. More importantly, his analysis seem to revolve around the narrow situations where one color is either white or black, and ignoring the massive range of colors in between.
 
-With the patents pending/applied for, we've felt comfortable presenting the math/methods publicly. Doing so makes reverse engineering trivial, meaning that uninformed hacks can twist things around—but make no mistake, they are doing a disservice in that they create confusion and elevate misunderstanding. 
+With the patents pending/applied for, we've felt comfortable presenting the math/methods publicly. But doing so makes reverse engineering trivial, meaning that uninformed hacks can twist things around—but make no mistake, they are doing a disservice in that they create confusion and elevate misunderstanding. 
 
 ## *But also, reverse engineering is IP theft*.
 
@@ -88,7 +88,7 @@ For xi's benefit I listed some of the historical contrast methods here: https://
 
 
 ## The purpose of this fork from xi's repo
-The xi/apca-introduction repo is rife with misleading, inaccurate, and even false statements. It is using inappropriate examples that are seemingly designed to "wash away" the actual and important aspects of the contrast methods that he claims are being evaluated.
+The xi/apca-introduction repo is rife with misleading, inaccurate, and outright false statements. It is using inappropriate examples that are incredibly biased, designed to "wash away" the actual and important differences of the contrast methods that he claims are being evaluated.
 
 This fork is my attempt to [**provide a rebuttle**](https://github.com/Myndex/apca-introduction/blob/main/analysis.md) to xi's poorly conceived analysis (or if not poorly conceived it is intentionally derisive and obstructing. Determining the true motivation here is difficult as Tobias has been specifically evasive on this issue.)
 
@@ -97,7 +97,7 @@ This fork is my attempt to [**provide a rebuttle**](https://github.com/Myndex/ap
 ## 2) Debunking a faux debunker
 In his personal blog post with the provacative title ***"Debunking claims about contrast formulas"*** at `.../xi/posts/2022-09-10-contrast-algorithms/` Tobias is painting himself as a "debunker", and he seems to be escalating his derisive and spurious position in his recent post. This page at this fork is intended to address and clarify the problems with his position.
 
-He has stated he has a "degree in math" which is not particularly meaningful and by itself not applicable to the field of visual perception. While it is certainly true that we use math in visual perception, that does not imply that someone with general math skills will automatically understand color science. In Tobias' case, he is frequently abstracting and converting the well established maths used in perception models, and in doing so, corrupting or destroying any perceptually uniform qualities that had existed in the basic equasions.
+He has stated he has a "degree in math" which is not particularly meaningful, and by itself not applicable to the field of visual perception. While it is certainly true that we use math in visual perception, that does not imply that someone with general math skills will automatically understand color science. In Tobias' case, he is frequently abstracting and converting the well-established maths used in perception models, and in doing so, corrupting or destroying any perceptually uniform qualities that had existed in the basic equations.
 
 Tobias does this and has refused to acknowledge that the results he claims are "all the same as simple contrast" (paraphrasing) are in fact not at all the same—the implication here is that his true motivation is to confuse and misinform. He has discovered nothing, and asserts falsehoods or his uninformed opinion as if it were fact.
 
@@ -107,7 +107,7 @@ Let's start off with how Tobias lacks knowledge of the basics of perception scie
 > ### _Weber Contrast: (Ymax - Ymin) / Ymin_
 > _The authors provide a lot of background information on this one, but fail to mention one crucial point: This again is simple contrast, just with an offset of 1:_
 
-This is laughably wrong. Weber contrast is defined as ` Cw = (Ysymbol - Ybg) / Ybg ` The reality is that Weber (unlike WCAG2) is specific to polarity, as it is _MOST IMPORTANT_ for the adapting field to be the denominator. Apparently Tobias is unaware of this, and is apparently making these leaps of logic without regard for vision science. 
+This is laughably wrong. Weber contrast is defined as $` Cw = (Ysymbol - Ybg) / Ybg `$ The reality is that Weber (unlike WCAG2) is specific to polarity, as it is _MOST IMPORTANT_ for the adapting field to be the denominator. Apparently Tobias is unaware of this, and is apparently making these leaps of logic without regard for vision science. 
 
 When working with Weber, it can be mathmatically convienient to remain positive by using the absolute value of the difference between the symbol and the BG. Something key here: when the BG is white, then the resultant contrast value is between 0 to 1. Tobias' claim that Weber is "just simple contrast minus 1" is again *completely false*. Tobias has been claiming that his variations are "monotonic" but let's take a look at how these actually graph:
 
