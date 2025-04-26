@@ -67,7 +67,7 @@ baseline._
 
 ### _Opinion not based in fact._
 
-Some of WCAG 2, such as that relating to the structure of the document needed for accessibility (i.e. needed for screen reader support) is certainly important. But some of WCAG 2 that relate to perception, such as contrast, are not based in science, not empirically tested nor evaluated, were in fact objected to at the time (objections ignored), and otherwise unsupportable as law, and I am unaware of any cases judged on the merits in the US, at least not at the Federal level. In discussing this with legal council, I was informed that the NY and CA cases were relating to actual accessibility, not automated testing, though this is something I've been looking into.
+Some of WCAG 2, such as that relating to the structure of the document needed for accessibility (i.e. needed for screen reader support) is certainly important. But some of WCAG 2 that relate to perception, such as contrast, are not based in science, not empirically tested nor evaluated, were in fact objected to at the time (objections ignored), and otherwise unsupportable as law, and I am unaware of any cases judged on the merits in the US, at least not at the Federal level. In discussing this with legal council, I was informed that the NY and CA cases were relating to actual accessibility, not automated testing, though this is something we've been looking into.
 
 .
 
@@ -132,7 +132,7 @@ No. This naive approach is fundamentally wrong, so it does not provide any sort 
 
 I am not certain the motivation for presenting this approach here, and further, if a naive approach were to be included for a baseline, then the most simple, such as "simple contrast", should be used. Otherwise it only serves to confuse the reader and obscure the point.
 
-To be clear, we formerly provided xi with a resource list in good faith, including suthoritative books which could help inform his thought here. But based on interactions, it does not appear informed on the subject. For those that have spent a lifetime working with color and light and vision, such a ham-fisted pedestrian discussion, stating falsehoods with a tone of authority, is quite infuriating by itself. That he is applying this shade to work that has been in development, and smearing the meaning is beyond the pale.
+To be clear, we formerly provided xi with a resource list in good faith, including suthoritative books which could help inform his thought here. But based on interactions, xi does not appear informed on the subject. For those that have spent a lifetime working with color and light and vision, such a ham-fisted pedestrian discussion, stating falsehoods with a tone of authority, is quite infuriating by itself. That he is applying this shade to work that has been in development, and smearing the meaning is beyond the pale.
 
 .
 
@@ -165,7 +165,7 @@ To be clear, we formerly provided xi with a resource list in good faith, includi
 > ```
 
 **_PARTIALLY INCORRECT_**
-This is the WCAG2 formula EXCEPT that WCAG2 does not care which is foreground or which is background, but it does demand which is lighter and which is darker. This is addressed obliquely in the return ternary statement. If this page intends to educate, then the importance of qualifying which color is higher luminance before calculating the ratio should be up front.
+This is the WCAG2 formula EXCEPT that WCAG2 does not care which is foreground or which is background, but it does demand which is lighter and which is darker. This is addressed obliquely in the return ternary statement. If this page intends to educate, then the importance of qualifying which color is higher luminance before calculating the ratio should be up front. Also, buried in other parts of the example code, xi _rounds_ the result, but WCAG 2 requires using 'Math.floor()', i.e. AGWG deceided that WCAG 2 contrast must be truncated, not rounded.
 
 The function for WCAG 2 contrast() is more clearly written as:
 
@@ -175,7 +175,7 @@ function contrast(fg, bg) {
   let ybg = sRGBtoY(bg) + 0.05;
   
            // divide the lightest by the darkest for the ratio
-  return (ybg > yfg) ? ybg/yfg : yfg/ybg;
+  return (ybg > yfg) ? Math.floor(ybg/yfg) : Math.floor(yfg/ybg);
 };
 ```
 
@@ -198,15 +198,15 @@ red, green, and blue channels are weighted to sum to the final luminance. The
 weights result from different sensitivities in the human eye: Yellow light has
 a much bigger response than the same amount of blue light._
 
-The weights here are derived from the CIE 1931 2° standard observer. While the CIE 1931 2° standard observer is the cornerstone of most colorimetry, it is also known that it is deficient in some ways. Also, it is useful to point out that the piecewise sRGB math was created in the 1990s for the purpose of processing on the computer technology of the time, but even then, and in the standard, the transfer curve for the physical monitor is a little difference, being specified as a pure gamma curve of 2.2, and relating to CRT monitors with a limited output of 80 nits. Today, monitors are commonly much brighter, and brighter monitors necessitate a higher gamma for the same perceptual effect in the same given environment.
+The weights here are derived from the CIE 1931 2° standard observer. While the CIE 1931 2° standard observer is the cornerstone of most colorimetry, it is also known that it is deficient in some ways. Also, it is useful to point out that the piecewise sRGB math was created in the 1990s for the purpose of processing on the computer technology of the time, but even then, and in the standard, the transfer curve for the physical monitor is a little different, being specified as a pure gamma curve of $`\gamma = 2.2`$, and relating to CRT monitors with a limited output of 80&nbsp;nits. Today, monitors are commonly much brighter, and brighter monitors tend to be adjusted to a higher gamma for the same perceptual effect, in the same given environment.
 
-At any rate, the expected luminance will vary, but is still not the perceptual lightness, which is different from the emitted luminance, and related to a number of contextual factors.
+At any rate, the expected luminance will vary, but is still not the perceptual _lightness_, which is different from the emitted luminance, and related to a number of contextual factors.
 
 ### Again:
 
-**Luminance** is a physical measure of light in the real world, but it is not perceptual lightness.
+**Luminance** is a _physical measure_ of light in the real world, but it is not perceptual lightness.
 
-**Perceptual Lightness** is a model of how human vision perceives luminance, given certain contexts. It is not a 1:1 relationship to luminance.
+**Perceptual Lightness** is a _model_ of how human vision perceives luminance, given certain contexts. It is not a 1:1 relationship to luminance.
 
 Throughout this analysis, xi seems to conflate the two, and makes some logical leaps that are therefore unsupported.
 
@@ -315,7 +315,7 @@ APCA to WCAG 2.x, I will make some modifications:_
     threshold values. Just like the shift by 1 in the WCAG formula, this can
     simply be ignored._
 
-The scale/offset adjust is part of perceptual uniformity. xi can't discard it just because he doesn't understand it. No, it can not be ignored. The bastardized math that xi presents here is not a valid version of APCA. It is corrupted and distorted in order to play into xi's narrative.
+The scale/offset adjust is part of perceptual uniformity. xi can't discard it just because he doesn't understand it. No, it can not be ignored. The bastardized math that xi presents here is **not a valid version of APCA**. It is corrupted and distorted in order to play into xi's narrative.
 
 .
 
@@ -547,7 +547,7 @@ light value of 0.4._
 variants. As we can see, they correlate in both cases, but the modified WCAG
 2.x contrast is much closer._
 
-These scatter plots are non-sensical, and along with the maths appear to be weighted to minimize the actual differences. Importantly, xi used log scales to hide the differences. xi created several versions of these charts, none of them being instructive nor salient.
+These scatter plots are non-sensical and illustrate nothing cogent. ANd then the maths appear to be weighted to minimize the actual differences. Importantly, xi used log scales to hide the differences. xi created several versions of these charts, none of them being instructive nor salient.
 
 .
 
@@ -888,7 +888,7 @@ a considerable effort. See \<Cluster B thread deleted\>._
 > First, the entire basis for APCA is rooted in empirical data, and these claims are false, misleading, and notwithstanding. Here is a link to a listing of [peer review and third party evaluations of APCA](https://git.apcacontrast.com/documentation/independent-review).
 
 > [!WARNING]
-> Second, xi's continued linking to certain threads that feature trolling and personal harassment of the author of this rebuttal, implies his true motivations are other than claimed. At the very least, has implied by association some connection to the small group of obstructionists to the process. This has not gone unnoticed.
+> Second, xi's continued linking to certain threads that feature trolling and personal harassment of the author of this rebuttal, implies his true motivations are other than claimed. At the very least, xi has implied by association some connection to the small group of obstructionists to the process, and we are aware of the obstructionists using xi's corrupted faux analysis toward their malicious goals. This has not gone unnoticed.
 
 
 [Web Content Accessibility Guidelines]: https://www.w3.org/TR/WCAG21/
