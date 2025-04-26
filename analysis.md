@@ -511,9 +511,8 @@ The curves are very clearly _NOT AT ALL_ similar. This is a bizarre statement, a
 
 > _Despite the very different formula, the WCAG 2.x curve also has a similar shape._
 
-Notwithstanding comment. They are curves, but they are so clearly different that bizarre statements to the contrary have me questioning the motives herein.
+Notwithstanding comment. It is prima facie evidence that these curves are significantly different!! To say otherwise is some form of cognitive dissonance, or malicious motivation. They are curves, but they are so clearly different, that bizarre statements to the contrary have me questioning the motives herein.
 
-It is prima facie evidence that these curves are significantly different!! To say otherwise is some form of cognitive dissonance, or malicious motivation.
 
 .
 
@@ -547,7 +546,7 @@ light value of 0.4._
 variants. As we can see, they correlate in both cases, but the modified WCAG
 2.x contrast is much closer._
 
-These scatter plots are non-sensical and illustrate nothing cogent. ANd then the maths appear to be weighted to minimize the actual differences. Importantly, xi used log scales to hide the differences. xi created several versions of these charts, none of them being instructive nor salient.
+These scatter plots are non-sensical and illustrate nothing cogent. And then the maths appear to be weighted to minimize the actual differences. Importantly, xi used log scales to hide the differences. xi created several versions of these charts, none of them being instructive nor salient.
 
 .
 
@@ -641,7 +640,7 @@ And we can set that aside, as we have the seminal research of Lovie-Kitchin et a
 
 .
 
-> _Interestingly, a lower spatial frequency is not always easier to read though. [Studies have shown] that the optimal spatial frequency is at about 5-7 cycles per degree. Below that, features get slightly harder to detect. (Perhaps that is the reasons for the "you don't see the forest among the trees" phenomenon.)_
+> _Interestingly, a lower spatial frequency is not always easier to read though. Studies have shown that the optimal spatial frequency is at about 5-7 cycles per degree. Below that, features get slightly harder to detect. (Perhaps that is the reasons for the "you don't see the forest among the trees" phenomenon.)_
 
 You are conflating different bits of data, including non-relevant aspects of the CS curve. Again see Legge et alia. Moreover, getting cites from Wikipedia, without checking the actually literature, is bad practice. Your statement here is incorrect. Peak sensitivity is spatial frequencies of 2-5 cpd, and sensitivity falls off very rapidly above that. 20/20 vision needs letters to be about 18-30&nbsp;cpd for minimum recognition. Legge et alia show that the range of 0.2° and 2.0° of visual angle is the best readability. All of this is academic.
 
