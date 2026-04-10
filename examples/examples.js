@@ -4,12 +4,12 @@ import * as apca from '../apca.js';
 const LEVEL_LABELS = ['REJECT', 'AA-L', 'AA', 'AAA', 'AAA'];
 const FONT_SIZE = ['32px', '24px', '18.7px', '16px', '12px'];
 const PADDING = ['0.1em 0.25em', '0.33em', '0.8em', '1em', '1.3em'];
-const APCA_LABELS = [ //[0, 15,     22,      30,     37.5,     45,     52.5,    60,      67.5,    75,     82.5,     90,  110];
+const APCA_LABELS = [//[0, 15,  22,   30,     37.5,     45,     52.5,    60,      67.5,    75,     82.5,     90,  110 ];
 		['REJECT','NO-TXT','NO-TXT','SPOT','SUBFLT','FLUENT','FLUENT','FLUENT','FLUENT','FLUENT','TOO-HI','TOO-HI'], // 32px
 		['REJECT','REJECT','NO-TXT','SPOT','SPOT','SUBFLT','FLUENT','BODYMN','BODYMN','BODYTX','BODYTX','TOO-HI'], // 24px
-		['REJECT','REJECT','REJECT','SPOT','SPOT','SUBFLT','SUBFLT','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX'], // 18.7px
-		['REJECT','REJECT','REJECT','NONTXT','SPOT','SPOT','SPOT','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX'], // 16px
-		['REJECT','REJECT','REJECT','NONTXT','NONTXT','SPOT','SPOT','SPOT','SPOT','SUBFLT','SUBFLT','SUBFLT'], // 12px
+		['REJECT','REJECT','NO-TXT','DISTXT','SPOT','SUBFLT','SUBFLT','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX'], // 18.7px
+		['REJECT','REJECT','REJECT','DISTXT','DISTXT','SPOT','SPOT','FLUENT','FLUENT','BODYMN','BODYTX','BODYTX'], // 16px
+		['REJECT','REJECT','REJECT','NONTXT','NONTXT','NONTXT','SPOT','SPOT','SPOT','SUBFLT','SUBFLT','SUBFLT'], // 12px
 	];
 
 // [0,15,22,30,37.5,45,52.5,60,67.5,75,82.5,90,110];
@@ -42,6 +42,10 @@ const COLORS = [
 	['#9322ad', '#fedcba', '#123456'],
 	['#11bbff', '#4400aa', '#aa0044'],
 	['#150656', '#789abc', '#896669'],
+	['#f1f8fe', '#b07290', '#dea654'],
+	['#ffeeaa', '#a867d2', '#abc123'],
+	['#fbf977', '#23651f', '#9b6b4b'],
+	['#fafafa', '#263745', '#828487'],
 ];
 
 var parseColor = function(c) {
