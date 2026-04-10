@@ -66,11 +66,11 @@ div hr {
 	background-color: #800;
 	color: #ff8;
 }
-.badge-SPOT {
+.badge-SPOT, .badge-BORDER {
 	background-color: hsl(60, 100%, 45%);
 	color: #b00;
 }
-.badge-NONTXT {
+.badge-NONTXT, .badge-DISTXT {
 	background-color: hsl(60, 100%, 45%);
 	color: #800;
 }
@@ -82,11 +82,11 @@ div hr {
 	background-color: #480;
 	color: #ffa;
 }
-.badge-AAA,.badge-AA,.badge-AA-L,.badge-FLUENT{
+.badge-AAA,.badge-AA,.badge-AA-L,.badge-FLUENT {
 	background-color: #0a0;
 	color: #efc;
 }
-.badge-BODYTX,.badge-BODYMN{
+.badge-BODYTX,.badge-BODYMN {
 	background-color: #080;
 	color: #fff;
 }
