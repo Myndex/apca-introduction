@@ -1,5 +1,5 @@
 # Corrected fork of apca-introduction, with comments
-User xi _(Tobias Bengfort)_ created an unauthorized repo called _"apca-introduction"_ which unfortunately is misleading. This fork is intended to clarify, make corrections, and set the record straight. The corrected ***"The missing introduction to APCA"*** below was revised for accuracy only, with the intention of maintaining xi's original tone and simplicity. At the bottom is a rebuttal of certain statements he made.
+User xi _(Tobias Bengfort)_ created a repo called _"apca-introduction"_ which unfortunately contains significant inaccuracies. This fork is intended to clarify, make corrections, and set the record straight. The corrected ***"The missing introduction to APCA"*** below was revised for accuracy only, with the intention of maintaining xi's original tone and simplicity. At the bottom is a rebuttal of certain statements he made.
 
 -----
 # The missing introduction to APCA
