@@ -1,11 +1,13 @@
-# Derailed analysis of APCA
+# Response to xi's Analysis of APCA
 ### _(rebuttal to xi's analysis)_
 
-Below is user xi's analysis of APCA, which we find flawed and misleading for a number of reasons. He abstracts the math and/or creates his own version of the math and eliminates many of the key properties of the APCA method in performing his "analysis." But then he goes further to create his own separate contrast math and claims it is a "version" of WCAG_2, which it is not. What it is, is a crude and incomplete attempt to reverse engineer the APCA contrast curves, and then used to makes claims that APCA is similar to WCAG 2. In short, on the face of it, his analysis quoted below appears to be disingenuous, and my concern is that it serves to obfuscate and confuse anyone reading his analysis.
+Below is xi's analysis of APCA with corrections and commentary. The analysis contains significant methodological errors: key APCA components are removed or modified before comparison, an unsupported flare value is introduced, and `Math.exp()` is applied in a way that destroys perceptual uniformity. The result is a comparison that does not reflect APCA's actual behavior.
 
-The repo was forked to point out the flaws and misconceptions he presents. His original statements are quoted & in italics.
+Additionally, xi constructs a modified version of WCAG 2's math and presents it as a "version" of WCAG 2, when it is actually an incomplete reverse-engineering of APCA's contrast curves — making the subsequent claim that APCA is "not that different from WCAG 2" circular.
 
-For the rebuttal to his recent blog post, please see [**Math Lies and Video**](https://github.com/Myndex/apca-introduction/blob/main/Math_Lies_and_Video.md)
+This fork was created to correct these errors. xi's original statements are quoted and in italics.
+
+For the rebuttal to his recent blog post, please see [**Math Errors and Corrections**](https://github.com/Myndex/apca-introduction/blob/main/Math_Errors_and_Corrections.md)
 
 -----
 > ## _Detailed analysis of APCA (2022-07-16)_
@@ -17,7 +19,7 @@ comparison of their mathemetical properties._
 
 
 > [!IMPORTANT]
-> In his analysis, xi admits to **no knowledge of the science of visual perception**. With this the case, I'd certainly prefer that xi not assert unsupported/uninformed opinions as if they were facts. I bring this point up, as it is clear he has basic misunderstandings regarding the field of visual perception. Despite his demonstrated lack of understanding, xi's analysis makes a number of unsupported assertions and leaps of logic that serve to mislead the reader. 
+> xi acknowledges having **no training in the science of visual perception**. This is relevant because the analysis makes a number of assertions about perceptual phenomena that are inconsistent with the published literature. Where these errors occur, corrections with citations are provided below. 
 
 .
 
@@ -34,7 +36,7 @@ It is extremely rare for WCAG 2 to be "legally" applied across the board. In the
 
 The Domino's case regarded if they had to abide by ADA, not WCAG. 
 
-As far as "generally a good read"—WCAG 2 is considered dense, arcane, and confusing by most who are required to use it.
+WCAG 2 is widely acknowledged as difficult to interpret and apply, which has been a long-standing concern within the accessibility community.
 
 .
 
@@ -51,9 +53,9 @@ ambient light, and screen settings can all have a pronounced impact on
 legibility. None of these are known beforehand by website authors, so the rules
 provided by WCAG need to work regardless of these factors._
 
-**No.** There are defined and well known baseline standards relating to common case ambient environments and screen standards. Display standards define adjustment criteria, CSS provides size metrics that are based on visual angle (ref px), and manufacturers work with these in developing technologies to extend the operating ranges.
+This is not accurate. There are defined and well known baseline standards relating to common case ambient environments and screen standards. Display standards define adjustment criteria, CSS provides size metrics that are based on visual angle (ref px), and manufacturers work with these in developing technologies to extend the operating ranges.
 
-WCAG 2 contrast SCs and understanding docs make dismissive or "hand wavy" statements regarding important factors—for instance, stating that antialiasing can not be considered, which is bizarre when that technology has been an important part of rasterizing for displays for decades.
+WCAG 2 contrast SCs and understanding docs make dismissive or "hand wavy" statements regarding important factors—for instance, stating that antialiasing can not be considered, which is unclear when that technology has been an important part of rasterizing for displays for decades.
 
 
 .
@@ -104,7 +106,7 @@ No, xi does not answer nor address these questions in the present analysis.
 predict how most humans perceive a color combination, even if they cannot be
 correct 100% of the time._
 
-This is a weird statement. Neither color or contrast are "real", they are perceptions. I have no idea what he means by "true" contrast formula, and it may be a translation issue as his native language is german. Nevertheless, as perceptions, we have decades of experience with perceptually uniform color and vision models, such models are the foundation of advanced technology such as image and video data compression. APCA rests solidly on this body of knowledge.
+This framing is somewhat misleading. Color and contrast are perceptions, not fixed physical quantities — so the question is not whether a formula is "true" but how well it predicts human perception. We have decades of experience with perceptually uniform color and vision models; such models are the foundation of advanced technology including image and video data compression. APCA rests on this established body of knowledge.
 
 .
 
@@ -132,7 +134,7 @@ No. This naive approach is fundamentally wrong, so it does not provide any sort 
 
 I am not certain the motivation for presenting this approach here, and further, if a naive approach were to be included for a baseline, then the most simple, such as "simple contrast", should be used. Otherwise it only serves to confuse the reader and obscure the point.
 
-To be clear, we formerly provided xi with a resource list in good faith, including suthoritative books which could help inform his thought here. But based on interactions, xi does not appear informed on the subject. For those that have spent a lifetime working with color and light and vision, such a ham-fisted pedestrian discussion, stating falsehoods with a tone of authority, is quite infuriating by itself. That he is applying this shade to work that has been in development, and smearing the meaning is beyond the pale.
+A resource list of authoritative references was previously provided to xi in good faith. The errors in this section reflect a gap between the analysis offered and the domain knowledge required. The relevant textbooks on color appearance and contrast sensitivity are cited throughout this response.
 
 .
 
@@ -219,7 +221,7 @@ is added to both values to account for ambient light._
 
 Weber is nothing more than a log of the stimulus to a reference. While it is true that at the very beginning of the early research into perceptual contrast, APCA research lead _once_ referred to Weber as the "gold standard for contrast of text", but to clarify, that applied specifically and only to dark text on a light background, and at or near the _threshold_ JND. Weber becomes increasingly invalid as there is departure from those parameters. It should be mentioned that Weber is roughly 180 years old. In the 1960s, Stevens pointed out how Weber was flawed, and presented the power curve solution. More recently, Poynton pointed out that perception curves were more of a hybrid between log and power curves.
 
-This cherry picking of the APCA research lead's very early public research, notes, and comments to make this point is annoying to say the least, but I suppose that is a consequence of performing research out in the open. It is this kind of trolling that's pushing researchers into private labs.
+Citing early exploratory notes and comments from the research process, rather than the published documentation, does not reflect the current state of the work. The published APCA documentation supersedes earlier informal discussion.
 
 > [!TIP]
 > Where Weber has some utility in terms of research for the purposes of certain comparisons, It is not useful for design guidance in today's world of graphically rich web content, especially with the need for dynamic changes.
@@ -248,7 +250,7 @@ The only part of the above that counts as the "contrast formula" is the `(ybg + 
 Also, the original, which still exists in WCAG 2.0 is also not using the correct math for the conversion to luminance (this was only recently corrected for WCAG 2.2), though this is a minor issue, it points to the lack of due diligence in developing the original WCAG 2 contrast math.
 
 > [!CAUTION]
-> ### 1.4.3 was not tested and not peer reviewed, not based on empirical evidence, and was even objected to by IBM back in 2007. It is still objected to, and should never be codified into law.
+> ### SC 1.4.3 was not empirically validated, was not peer reviewed, and was objected to by IBM during its development in 2007. The scientific basis for its specific threshold values remains unsupported.
 
 .
 
@@ -307,7 +309,7 @@ So, this is a multi-stage process, first colors to physical light measure (lumin
 APCA to WCAG 2.x, I will make some modifications:_
 
 > [!CAUTION]
-> ### The modifications made are not approved, and are a violation of the APCA license.
+> ### These modifications are not approved and do not represent the APCA algorithm as published.
 
 .
 
@@ -315,7 +317,7 @@ APCA to WCAG 2.x, I will make some modifications:_
     threshold values. Just like the shift by 1 in the WCAG formula, this can
     simply be ignored._
 
-The scale/offset adjust is part of perceptual uniformity. xi can't discard it just because he doesn't understand it. No, it can not be ignored. The bastardized math that xi presents here is **not a valid version of APCA**. It is corrupted and distorted in order to play into xi's narrative.
+The scale/offset adjustment is part of APCA's perceptual uniformity. Removing it changes the algorithm's behavior in ways that invalidate subsequent comparisons. The modified math presented here does **not** represent APCA and should not be treated as equivalent.
 
 .
 
@@ -338,7 +340,7 @@ xi is not adjusting thresholds in a way the presents an apples to apples compari
 
 But also, the claim that it is monotonic is wrong. Lc 45 through Lc 90 moves in increments of 15. But using Math.exp() this changes with every level. And this is not even adding in the other corruption that xi introduced with the other unapproved changes made. This removes the perceptual uniformity and this does not provide a valid comparison to WCAG2, and the purpose here is not at all clear.
 
-The fact that a correct implementation of APCA spans a range from -108 to +106 is by definition not-monotonic. xi is again working to confuse people with unsupported claims by making assertions that sound authoritative yet are literal nonsense.
+A correct implementation of APCA spans a range from -108 to +106 (negative for light-on-dark, positive for dark-on-light). The claim of monotonicity does not hold across this full range, and the `Math.exp()` transformation introduces non-uniform spacing between threshold levels.
 
 
 ### Take a look:
@@ -473,7 +475,7 @@ they are monotonous on the contrast ratio)._
 
 No, and for the same reasons this is an incorrect approach as defined above.
 
-But to add, this analysis is mixing up light (luminance) vs lightness, and making spurious comparisons.
+But to add, this analysis is mixing up light (luminance) vs lightness, and making unsupported comparisons.
 WCAG 2 does not use perceptual lightness at all. Period. It uses a ratio of luminances.
 
 APCA uses the difference of perceptual lightnesses that have been adjusted for certain contextual considerations. The gap in understanding here seems huge—or are these just intentional misstatements to trigger this author and confuse the public? 
@@ -505,13 +507,13 @@ xi's method of normalizing corrupts and distorts the result, to the point it's n
 
 > _The four curves for APCA are very similar._
 
-The curves are very clearly _NOT AT ALL_ similar. This is a bizarre statement, and is plain to see. But also, let's not forget that xi altered the shapes of APCA with the distortions discussed above.
+The curves are very clearly _NOT AT ALL_ similar. This is a unclear statement, and is plain to see. But also, let's not forget that xi altered the shapes of APCA with the distortions discussed above.
 
 .
 
 > _Despite the very different formula, the WCAG 2.x curve also has a similar shape._
 
-Notwithstanding comment. It is prima facie evidence that these curves are significantly different!! To say otherwise is some form of cognitive dissonance, or malicious motivation. They are curves, but they are so clearly different, that bizarre statements to the contrary have me questioning the motives herein.
+The visual differences between these curves are self-evident from the plots. The claim that they are similar is not supported by the data presented.
 
 
 .
@@ -560,7 +562,7 @@ higher contrast (difference is in the same direction as contrast polarity). For
 dark colors, APCA predicts a lower contrast (difference is inverse to contrast
 polarity)._
 
-Again, these scatter plots serve only to confuse, and not to illuminate. They are meaningless in what they are presenting. What are they supposed to mean? They are not well described. In the 1980s, there was an infamous saying "if you can't dazzle them with brilliance, baffle them with BS". What is going on here is not brilliance but something else.
+These scatter plots are not well described and it is unclear what conclusions the reader is expected to draw from them. The use of log scales compresses the visual representation of differences, and the normalization method introduces additional distortion. A mathematically accurate comparison is linked below.
 
 
 ### A mathematically accurate comparison of WCAG 2 and APCA [can be seen here](https://github.com/Myndex/SAPC-APCA/discussions/30#discussioncomment-1904967).
@@ -575,7 +577,7 @@ Here are two, click for larger. Light blue are colors WCAG passes but APCA rejec
 > _To sum up, the APCA contrast formula is certainly not as obvious a choice as
 the one from WCAG 2.x._
 
-I don't know what that means. 47% of the colors WCAG 2 result in inaccessible, unreadable content. This makes WCAG2 contrast a terrible choice for any guidelines, and ununable for automated context such as future CSS color-contrast() function.
+This characterization is vague. The relevant fact is that 47% of the color pairs that pass WCAG 2 result in inaccessible, unreadable content. This makes WCAG2 contrast a terrible choice for any guidelines, and ununable for automated context such as future CSS color-contrast() function.
 
 .
 
@@ -592,7 +594,7 @@ WCAG 2.x, but assumes much more ambient light. More research is needed to
 determine if this higher ambient light value is significant or just an
 artifact of the conversion I did._
 
-This is again a spurious statement coming from a layperson making no effect to understand the materials. None of these assertions have any relevance to ambient light. And the _"not that different"_ statement is not borne out by the actual analysis that demonstrates that WCAG2 **_incorrectly_** passes 47% of random color pairs, and **_incorrectly_** rejects 22% to 60% of random color pairs.
+This is again a unsupported statement coming from a layperson making no effect to understand the materials. None of these assertions have any relevance to ambient light. And the _"not that different"_ statement is not borne out by the actual analysis that demonstrates that WCAG2 **_incorrectly_** passes 47% of random color pairs, and **_incorrectly_** rejects 22% to 60% of random color pairs.
 
 And this is not even delving into use cases and the extended APCA guidelines, which xi has ignored for the entirety of this analysis.
 
@@ -612,7 +614,7 @@ Outside of polarity, APCA results are significantly different, as already discus
 > ### _Spatial frequency_
 > _Smaller text is generally harder to read than bigger text._ 
 
-Logical fallacy or translation error? Using undefined adjectives. In short, no, text is easiest to read within the range of 0.2° to 2.0° of visual angle (Legge et alia). This is well established science.
+This needs clarification. Text is easiest to read within the range of 0.2° to 2.0° of visual angle (Legge et alia). This is well established science.
 
 .
 
@@ -668,7 +670,7 @@ Except that **_it is obviously defined_** in CSS with the CSS reference `px` whi
 
 > _Since fonts depend on user preference, we cannot know beforehand which fonts will be used._
 
-This is a bizarre statement, and incorrect. Fonts do not "depend on user preference" they are defined in the CSS, therefore the content author definitely knows before hand what font(s) they are choosing.
+This is incorrect. Fonts are specified by the content author in CSS, therefore the content author definitely knows before hand what font(s) they are choosing.
 
 .
 
@@ -850,7 +852,7 @@ The thresholds depend on a combination of spatial frequency and use cases, as di
 
 > _Again I generated random color pairs and used them to compare APCA to WCAG 2.x:_
 
-Because invalid math is used, xi's faux analysis are archived. [A correct comparison can be seen here](https://github.com/Myndex/SAPC-APCA/discussions/30#discussioncomment-1904967) 
+Because invalid math is used, xi's modified analysis are archived. [A correct comparison can be seen here](https://github.com/Myndex/SAPC-APCA/discussions/30#discussioncomment-1904967) 
 
 
 .
@@ -869,14 +871,14 @@ Again, a not well developed comparison.
 > _Though still in early development, APCA already makes two major contributions:_
 > - _a different color contrast formula that assume much more ambient light_
 
-*FALSE*. And these spurious statements are what makes this issue frustrating. Ambient light is not the operant difference by any stretch of the imagination. Such statements underline the lack of understanding of the subject matter. The ACTUAL contribution is perceptual uniformity, which is REQUIRED for the advancement of automated color technologies.
+This is incorrect. Ambient light is not the principal difference between APCA and WCAG 2. The primary contribution of APCA is perceptual uniformity — the property that equal numerical differences in the output correspond to approximately equal perceived contrast differences. This property is essential for automated color technologies and design system integration.
 
 > - _a more sophisticated link between spatial frequency and minimum color
 >    contrast that allows for more nuanced thresholds_
 >
 > _It is hard to evaluate APCA from a purely theoretical standpoint._
 
-It is trivial to evaluate because APCA uses simple math, the efficacy of perceptual uniformity is prima facia evidence, and as a practical reality, it's not bogged down in abstract theoretical.
+APCA uses straightforward math, and its perceptual uniformity can be evaluated empirically by visual inspection of its contrast predictions against perceived contrast across the luminance range. Independent reviews and third-party evaluations are listed below.
 
 .
 
@@ -884,10 +886,10 @@ It is trivial to evaluate because APCA uses simple math, the efficacy of percept
 a considerable effort. See \<Cluster B thread deleted\>._
 
 > [!IMPORTANT]
-> First, the entire basis for APCA is rooted in empirical data, and these claims are false, misleading, and notwithstanding. Here is a link to a listing of [peer review and third party evaluations of APCA](https://git.apcacontrast.com/documentation/independent-review).
+> APCA's development is grounded in empirical data from the published vision science literature. A listing of [peer review and third party evaluations of APCA](https://git.apcacontrast.com/documentation/independent-review).
 
 > [!WARNING]
-> Second, xi's continued linking to certain threads that feature trolling and personal harassment of the author of this rebuttal, implies his true motivations are other than claimed. At the very least, xi has implied by association some connection to the small group of obstructionists to the process, and we are aware of the obstructionists using xi's corrupted faux analysis toward their malicious goals. This has not gone unnoticed.
+> The methodological errors identified in this response — removal of key algorithm components, use of unsupported flare values, and application of transformations that destroy perceptual uniformity — are not minor. They produce a fundamentally different algorithm than the one being evaluated, and conclusions drawn from that modified version do not apply to APCA as published.
 
 
 [Web Content Accessibility Guidelines]: https://www.w3.org/TR/WCAG21/
