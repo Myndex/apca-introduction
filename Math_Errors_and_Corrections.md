@@ -1,5 +1,5 @@
-# Math, Lies, and Videoscreens
-_**How To Use Math To Lie:** the Debunking of a would-be debunker_
+# Math Errors and Corrections
+_**How To Use Math To twith the truth:** the debunking of a would-be debunker_
 
 GitHub user xi (aka Tobias Bengfort) wrote a blog post entitled _"Debunking claims about contrast formulas"_. In it he has taken a bizzare position and is twisting math around in an attempt to disregard the last century of vision and color science. Unfortunately the presentation of his uninformed opinion can only create further misunderstandings in a field that is already complicated and difficult to understand in the first place. Perhaps that's central to the problem here.
 
