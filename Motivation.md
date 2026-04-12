@@ -1,27 +1,29 @@
-# The Misleading Introduction to APCA
+# Why This Fork Exists
 
-User xi (Tobias Bengfort) created the parent repo, which is unfortunately filled with misconceptions and spurious assertions regarding readability, human perception of contrast, and APCA. Many things written at the parent repo are in error, misleading, false, or a complete misunderstanding.
+Tobias Bengfort (xi) created the parent repo, *"apca-introduction,"* which contains significant inaccuracies about the APCA algorithm, its scientific basis, and its development context. The analysis document applies mathematical transformations that remove key APCA components, producing results that do not represent the algorithm's actual behavior. This fork provides corrections with citations to the published research record.
 
-His "analysis" page corrupts the math in a beligerant attempt to crudely and incorrectly reverse-engineer APCA, and is making unauthorized claims and false assertions. This fork is intended to set the record straight.
+## What's Corrected Here
 
-## *The Truth Is Clear*
-Anyone with actual experience and knowledge in the field of vision science will clearly recognize the problems with Bengfort's claims. My concern is that xi is using complicated yet meaningless math to support his spurious assertions, which could create confusion and misunderstanding among many. On further investigation there appears the intention, by certain members of the small group of corporate obstructionists, to use Bengfort's repo as a reference furthering the direct interference with the development and continued research of visual readability.
+The original repo's errors fall into three categories:
 
-WCAG 2.x contrast SCs are well known to be wrong, we have proven that they cause more problems than they claim to solve. If somebody is objecting to changing WCAG 2.x contrast, ask yourself what their actual underlying motivation is. Most of these objections appear to be coming from within certain corporations who have a vested interest in the status quo.
+1. **Factual inaccuracies** about APCA's algorithm, documentation, and development status — corrected in the [main README](https://github.com/Myndex/apca-introduction#readme).
 
-### Readability is too important to society at large to allow such obstruction to continue.
+2. **Methodological errors in the analysis** — including removal of the output clamp and scale/offset adjustments, use of `Math.exp()` in a way that destroys perceptual uniformity, and introduction of an unsupported 0.4 flare value presented as "modified WCAG 2." These are addressed point by point in the [response to the analysis](https://github.com/Myndex/apca-introduction/blob/main/analysis.md).
 
-## Also in this repo
-[Derailed analysis of APCA](https://github.com/Myndex/apca-introduction/blob/main/analysis.md) a rebuttal to xi's _"Detailed analysis of APCA"_ which mischaracterizes the differences between various contrast measures.
+3. **Errors in the blog post on contrast formulas** — including the claim that mathematically distinct contrast formulas (Weber, Michelson, simple ratio) are "all the same," which is contradicted by both the empirical data and the published vision science literature. Addressed in [Math Errors and Corrections](https://github.com/Myndex/apca-introduction/blob/main/Math_Errors_and_Corrections.md).
 
-[Math, Lies, and Videotape](https://github.com/Myndex/apca-introduction/blob/main/Math_Lies_and_Video.md) Or put another way, _"How xi uses math to lie"_. This is a response to a lengthy blog post xi made that is rife with errors and misconceptions, and only serves to confuse and not enlighten on the topic.
+Issues were also filed at the original repo identifying specific errors. Some were closed without action.
 
-There are also a large number of issues posted at xi's repo, objecting to the misleading information. Tobias has closed many of them without action, so if reviewing, include the closed issues. Tobias has attempted to foster misinformation to other repos and to other vision scientists, who have summarily shut him down. His motivation is unclear, however some links he uses appear to tie him to a certain group of cognitively-dissonant obstructionists.
+## Context
 
-## *In a nutshell:*
-To be sure, vision science is a dense, complicated, and abstract subject that is difficult to understand. And the misunderstandings presented by xi/Tobias potentially have a very negative effect toward fostering the continued misunderstandings and myths surrounding vision and contrast that exist today, particularly within the accessibility community. 
+WCAG 2's contrast formula is well documented to produce systematic false passes and false fails (see the [evidence review](https://www.smashingmagazine.com/2022/09/realities-myths-contrast-color/)). APCA was developed to address these limitations using established vision science. The corrections in this fork are necessary because the original repo's errors have been cited elsewhere, contributing to confusion about the state of contrast research.
 
-### It is a primary goal of our research to educate and promote the truthful understanding of the important characteristics of vision as they apply to readability and accessibility for all humankind.
+## Resources
 
------
-APCA began as a research project to address the serious failings of WCAG 2.x contrast, beginning with [Thread 695](https://github.com/w3c/wcag/issues/695) linked here for historical purposes.
+- [**Easy Intro to APCA**](https://git.apcacontrast.com/documentation/APCAeasyIntro) — Plain-language overview
+- [**Why APCA**](https://git.apcacontrast.com/documentation/WhyAPCA) — Rationale for a new contrast method
+- [**APCA Discussion Forum**](https://github.com/Myndex/SAPC-APCA/discussions) — Open forum for questions and feedback
+
+---
+
+APCA began as a research project to address the documented limitations of WCAG 2.x contrast, beginning with [Issue #695](https://github.com/w3c/wcag/issues/695) in the W3C WCAG repository.
