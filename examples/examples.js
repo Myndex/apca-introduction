@@ -109,6 +109,10 @@ var addExample = function(fg, bg) {
 	document.body.append(clone);
 };
 
+var topLink = document.createElement('p');
+topLink.innerHTML = '<a href="../">&larr; Back to APCA Introduction</a>';
+document.body.append(topLink);
+
 COLORS.forEach(([c1, c2, c3]) => {
 	addExample(c1, c2);
 	addExample(c2, c1);
