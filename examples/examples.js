@@ -66,6 +66,12 @@ var getLevel = function(c, module) {
 	return module.arraySize - 1;
 };
 
+
+var topLink = document.createElement('p');
+topLink.innerHTML = '<a href="../">&larr; Back to APCA Introduction</a>';
+document.body.append(topLink);
+
+
 var template = document.querySelector('template');
 
 var addExample = function(fg, bg) {
@@ -109,9 +115,7 @@ var addExample = function(fg, bg) {
 	document.body.append(clone);
 };
 
-var topLink = document.createElement('p');
-topLink.innerHTML = '<a href="../">&larr; Back to APCA Introduction</a>';
-document.body.append(topLink);
+
 
 COLORS.forEach(([c1, c2, c3]) => {
 	addExample(c1, c2);
