@@ -115,3 +115,7 @@ COLORS.forEach(([c1, c2, c3]) => {
 	addExample(c1, c3);
 	addExample(c3, c1);
 });
+
+var backLink = document.createElement('p');
+backLink.innerHTML = '<a href="../">&larr; Back to APCA Introduction</a>';
+document.body.append(backLink);
