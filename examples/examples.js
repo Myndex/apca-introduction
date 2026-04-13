@@ -68,7 +68,7 @@ var getLevel = function(c, module) {
 
 
 var topLink = document.createElement('p');
-topLink.innerHTML = '<a href="../">&larr; Back to APCA Introduction</a>';
+topLink.innerHTML = '<a href="../">&larr; Back to APCA Introduction</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; WCAG 2 vs APCA' ;
 topLink.style.gridColumn = '1 / -1';
 document.body.append(topLink);
 
