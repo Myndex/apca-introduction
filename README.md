@@ -26,7 +26,7 @@ As shown above, WCAG&nbsp;2 contrast fails most with dark colors, and the result
 The [Accessible Perceptual Contrast Algorithm (APCA)](https://apcacontrast.com)
 is a new algorithm to predict the perceived lightness contrast between two adjacent colors. It was developed to address some issues in earlier algorithms, especially for dark colors, or when the text is lighter than the background.
 
-APCA was created by Andrew Somers at Myndex Research, and under the oversight of the Visual Contrast subgroup of Silver, and is the candidate method for contrast for WCAG&nbsp;3 (W3C Accessibility Guidelines).
+APCA was created by Andrew Somers at Myndex Research, within the Visual Contrast subgroup of Silver/WCAG3, and is the candidate method for contrast for WCAG&nbsp;3 (W3C Accessibility Guidelines).
 
 The official interactive demo is available at [apcacontrast.com](https://apcacontrast.com). No other link is canonical nor officially approved.
 
@@ -107,14 +107,14 @@ Also see [APCA In A Nutshell](https://git.apcacontrast.com/documentation/APCA_in
 
 ## Comparative Examples
 These examples are _based_ on xi's example script. The original script and method was deeply flawed, and has been corrected. These examples below are intended to maintain the same comparative intent as xi claims to have intended, but using useful and correct math.
-[![Visual comparison of WCAG 2.x and APCA](examples/screenshot1.png)](https://myndex.github.io/apca-introduction/examples/)
-[![Visual comparison of WCAG 2.x and APCA](examples/screenshot2.png)](https://myndex.github.io/apca-introduction/examples/)
-[![Visual comparison of WCAG 2.x and APCA](examples/screenshot3.png)](https://myndex.github.io/apca-introduction/examples/)
+<img width="640" alt="Visual comparison of WCAG 2.x and APCA" src="https://myndex.github.io/apca-introduction/examples/">
+<img width="640" alt="Visual comparison of WCAG 2.x and APCA" src="https://myndex.github.io/apca-introduction/examples/">
+<img width="640" alt="Visual comparison of WCAG 2.x and APCA" src="https://myndex.github.io/apca-introduction/examples/">
 
 ### Official Comparison from Myndex Research:
 This comparison uses achromatic grays as those define readability, making the comparative differences clearly evident.
 
-<img width="540" alt="Visual comparison of WCAG 2.x and APCA" src="https://git.apcacontrast.com/images/ColumnCompareAll400.png">
+<img width="640" alt="Visual comparison of WCAG 2.x and APCA" src="https://git.apcacontrast.com/images/ColumnCompareAll400.png">
 
 ## Status
 
