@@ -69,6 +69,7 @@ var getLevel = function(c, module) {
 
 var topLink = document.createElement('p');
 topLink.innerHTML = '<a href="../">&larr; Back to APCA Introduction</a>';
+topLink.style.gridColumn = '1 / -1';
 document.body.append(topLink);
 
 
@@ -126,4 +127,5 @@ COLORS.forEach(([c1, c2, c3]) => {
 
 var backLink = document.createElement('p');
 backLink.innerHTML = '<a href="../">&larr; Back to APCA Introduction</a>';
+backLink.style.gridColumn = '1 / -1';
 document.body.append(backLink);
