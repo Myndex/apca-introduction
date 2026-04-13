@@ -107,9 +107,9 @@ Also see [APCA In A Nutshell](https://git.apcacontrast.com/documentation/APCA_in
 
 ## Comparative Examples
 These examples are _based_ on xi's example script. The original script and method was deeply flawed, and has been corrected. These examples below are intended to maintain the same comparative intent as xi claims to have intended, but using useful and correct math.
-<img width="640" alt="Visual comparison of WCAG 2.x and APCA" src="https://myndex.github.io/apca-introduction/examples/">
-<img width="640" alt="Visual comparison of WCAG 2.x and APCA" src="https://myndex.github.io/apca-introduction/examples/">
-<img width="640" alt="Visual comparison of WCAG 2.x and APCA" src="https://myndex.github.io/apca-introduction/examples/">
+<img width="640" alt="Visual comparison of WCAG 2.x and APCA" src="https://myndex.github.io/apca-introduction/examples/screenshot1.png">
+<img width="640" alt="Visual comparison of WCAG 2.x and APCA" src="https://myndex.github.io/apca-introduction/examples/screenshot2.png">
+<img width="640" alt="Visual comparison of WCAG 2.x and APCA" src="https://myndex.github.io/apca-introduction/examples/screenshot3.png">
 
 ### Official Comparison from Myndex Research:
 This comparison uses achromatic grays as those define readability, making the comparative differences clearly evident.
